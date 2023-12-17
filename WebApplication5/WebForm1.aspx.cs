@@ -118,21 +118,24 @@ namespace WebApplication5
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            string u = userName.Text;
-            string p = password.Text;
+            string uname = userName.Text;
+            string pass = password.Text;
+            string eml = email.Text;
 
-            AddUser(u, p, "ddemail");
+            AddUser(uname, pass, eml);
 
-           /* if (IsValidUser(u, p))
-            {
-               // FormsAuthentication.RedirectFromLoginPage(u, false);
-                // Assign roles if needed
-                //AssignRoles(u);
-            }
-            else
-            {
-                Label1.Text = "Invalid username or password.";
-            }*/
+            Label1.Text = "Registerd ";
+
+            /* if (IsValidUser(u, p))
+             {
+                // FormsAuthentication.RedirectFromLoginPage(u, false);
+                 // Assign roles if needed
+                 //AssignRoles(u);
+             }
+             else
+             {
+                 Label1.Text = "Invalid username or password.";
+             }*/
 
         }
 

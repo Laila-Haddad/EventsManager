@@ -13,14 +13,16 @@
             <asp:TextBox ID="userName" runat="server" OnTextChanged="userName_TextChanged"></asp:TextBox>
         </p>
         <p>
-            &nbsp;</p>
-        <p>
             <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
         </p>
         <p>
-            &nbsp;</p>
+            <asp:TextBox ID="email" runat="server"></asp:TextBox>
+        </p>
         <p>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server"></asp:Label>
+        </p>
+        <p>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         </p>
         <div>
