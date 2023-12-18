@@ -90,7 +90,7 @@ namespace WebApplication5
 
         private void AddUser(string username, string password,string email) {
             // Your connection string key from web.config
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString;
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
 
             // SQL query to insert a new user into the Users table
             string insertQuery = "INSERT INTO Users (username, password,email) VALUES (@Username, @Password,@Email)";
