@@ -29,20 +29,7 @@ namespace WebApplication5.pages
             conn.Open();
 
             //build query depending on dropdown list role choice
-            string query;
-            if (role == "admin")
-            {
-                query = "SELECT * FROM [Admins] WHERE Username=@username AND email = @email AND password = @password ";
-            }
-            else if (role =="moderator")
-            {
-                query = "SELECT * FROM [Moderators] WHERE  Username=@username AND email = @email AND password = @password";
-            }
-            else
-            {
-                query = "SELECT * FROM [Users] WHERE  Username=@username AND email = @email AND password = @password";
-
-            }
+            string query= "SELECT * FROM "+role+"s WHERE Username=@username AND email = @email AND password = @password ";
             SqlCommand cmd = new SqlCommand(query, conn);
 
             //build prepared statement
@@ -56,15 +43,30 @@ namespace WebApplication5.pages
             bool read = data.Read();
             if (read)
             {
-                if (role.Equals("admin"))
+                //set a session variable with the user role
+                Session["UserRole"] = role;
+
+                if (role.Equals("Admin"))
                 {
-                    //set a session variable with the user role
-                    Session["UserRole"] = role;
-                    //redirect to desired page
                     Response.Redirect("~/pages/AdminPage.aspx");
                 }
 
-                else Label1.Text = "not admin";
+                else if (role.Equals("Moderator"))
+                {
+                    //ADD MOD PAGE
+                   Response.Redirect("~/pages/mod.aspx");
+                }
+
+                else if (role.Equals("User"))
+                {
+                    //ADD USER PAGE
+                    //Response.Redirect("~/pages/home.aspx");
+                }
+
+            }
+            else
+            {
+                Label1.Text = "invalid name or password";
             }
 
             conn.Close();
