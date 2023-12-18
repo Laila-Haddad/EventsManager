@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication5.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="WebApplication5.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -39,7 +39,7 @@
             <br />
             <br />
             <br />
-            Moderators <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBconnection %>" SelectCommand="SELECT * FROM [Moderators]"></asp:SqlDataSource>
+            Moderators <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT * FROM [Moderators]"></asp:SqlDataSource>
             <asp:GridView ID="GridView2" runat="server">
             </asp:GridView>
             <br />
