@@ -103,6 +103,7 @@
     <Content Include="Global.asax" />
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\UnauthorizedAccess.aspx" />
+    <Content Include="pages\Home.aspx" />
     <Content Include="Web.config" />
     <Content Include="pages\Register.aspx" />
     <Content Include="pages\AdminPage.aspx" />
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="pages\UnauthorizedAccess.aspx.designer.cs">
       <DependentUpon>UnauthorizedAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pages\Register.aspx.cs">

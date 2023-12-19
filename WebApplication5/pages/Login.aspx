@@ -18,12 +18,6 @@ Inherits="WebApplication5.pages.WebForm1" %>
       src="../js/jquery-1.9.1.min.js"
       defer=""
     ></script>
-    <script
-      class="u-script"
-      type="text/javascript"
-      src="../js/nicepage.js"
-      defer=""
-    ></script>
     <meta name="generator" content="Nicepage 6.1.8, nicepage.com" />
     <meta name="referrer" content="origin" />
 

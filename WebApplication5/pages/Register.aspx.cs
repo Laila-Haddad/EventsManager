@@ -67,6 +67,7 @@ namespace WebApplication5
                 }
             }
 
+
             
 
         }
@@ -81,7 +82,10 @@ namespace WebApplication5
             if (!VerifyEmailExistsOnce(eml))
             {
                 AddUser(uname, pass, eml);
-                
+
+                Response.Redirect("~/pages/Home.aspx");
+                Session["UserRole"] = "User";
+
             }
             else
             {

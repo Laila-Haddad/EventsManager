@@ -60,7 +60,7 @@
             <br />
             <br />
             <asp:Label ID="moderatorLabel" runat="server" Text="Moderators"></asp:Label>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT [email], [username] FROM [Moderators]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT [email], [username] FROM [Admins]"></asp:SqlDataSource>
             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource2">
                 <Columns>
                     <asp:BoundField DataField="email" HeaderText="email" ReadOnly="True" SortExpression="email" />

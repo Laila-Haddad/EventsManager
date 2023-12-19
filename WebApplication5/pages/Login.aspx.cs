@@ -29,7 +29,7 @@ namespace WebApplication5.pages
             conn.Open();
 
             //build query depending on dropdown list role choice
-            string query= "SELECT * FROM "+role+"s WHERE Username=@username AND email = @email AND password = @password ";
+            string query= "SELECT * FROM "+role+"s WHERE username=@username AND email = @email AND password = @password ";
             SqlCommand cmd = new SqlCommand(query, conn);
 
             //build prepared statement
@@ -54,13 +54,12 @@ namespace WebApplication5.pages
                 else if (role.Equals("Moderator"))
                 {
                     //ADD MOD PAGE
-                   Response.Redirect("~/pages/mod.aspx");
+                   //Response.Redirect("~/pages/mod.aspx");
                 }
 
                 else if (role.Equals("User"))
                 {
-                    //ADD USER PAGE
-                    //Response.Redirect("~/pages/home.aspx");
+                   Response.Redirect("~/pages/Home.aspx");
                 }
 
             }

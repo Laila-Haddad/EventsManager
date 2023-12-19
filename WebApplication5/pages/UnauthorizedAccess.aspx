@@ -8,8 +8,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <br />
+        <div style="font-size: 32px; font-weight: 700 ; text-align: center;">
             UNAUTHORIZED</div>
+        <br />
+
+        <hr />
     </form>
 </body>
 </html>
