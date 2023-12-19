@@ -17,77 +17,33 @@ namespace WebApplication5
 
         }
 
-        /*private bool IsValidUser(string username, string password)
+     
+        private bool VerifyEmailExistsOnce(string email)
         {
-            // Validate user credentials from the database
-            // Return true if the user is valid, otherwise false
-            string connectionString = ConfigurationManager.ConnectionStrings["YourConnectionString"].ConnectionString;
+            // Your connection string key from web.config
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
+
+            string selectQuery;
+           
+                // SQL query to check if the email exists in the Admins table
+                selectQuery = "SELECT COUNT(*) FROM Users WHERE email = @Email";
+
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                connection.Open();
-
-                string query = "SELECT COUNT(*) FROM Users WHERE userName = @Username AND password = @Password";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand(selectQuery, connection))
                 {
-                    command.Parameters.AddWithValue("@Username", username);
-                    command.Parameters.AddWithValue("@Password", password);
+                    command.Parameters.AddWithValue("@Email", email);
 
-                    int count = Convert.ToInt32(command.ExecuteScalar());
+                    connection.Open();
+
+                    int count = (int)command.ExecuteScalar();
+
+                    // If count is greater than 0, the email already exists
                     return count > 0;
                 }
             }
-         
-        }*/
-
-
-    /*    private void AssignRoles(string username)
-        {
-            // Retrieve roles for the user from the database
-            // and use Roles.AddUserToRole(username, roleName) to assign roles
-
-            string connectionString = ConfigurationManager.ConnectionStrings["YourConnectionString"].ConnectionString;
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-                string query = "SELECT Role FROM Users WHERE Username = @Username";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Username", username);
-
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            string role = reader["Role"].ToString();
-
-                            // Assign the user to the appropriate role
-                            switch (role)
-                            {
-                                case "Admin":
-                                    Roles.AddUserToRole(username, "Admin");
-                                    break;
-                                case "Moderator":
-                                    Roles.AddUserToRole(username, "Moderator");
-                                    break;
-                                case "User":
-                                    Roles.AddUserToRole(username, "User");
-                                    break;
-                                // Add more cases if needed for additional roles
-                                default:
-                                    // Handle any unexpected roles
-                                    break;
-                            }
-                        }
-                    }
-                }
-            }
-        }*/
-
+        }
         private void AddUser(string username, string password,string email) {
             // Your connection string key from web.config
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
@@ -122,9 +78,18 @@ namespace WebApplication5
             string pass = password.Text;
             string eml = email.Text;
 
-            AddUser(uname, pass, eml);
+            if (!VerifyEmailExistsOnce(eml))
+            {
+                AddUser(uname, pass, eml);
+                
+            }
+            else
+            {
+                Label2.Text = "User already exists";
+            }
+       
 
-            //Label1.Text = "User added succefuly ";
+            
 
 
         }

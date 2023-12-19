@@ -19,7 +19,7 @@
             <br />
             <asp:Label ID="emailLable" runat="server" Text="Email"></asp:Label>
             <br />
-            <asp:TextBox ID="email" runat="server"></asp:TextBox>
+            <asp:TextBox ID="email" runat="server" OnTextChanged="email_TextChanged"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="usernameLabel" runat="server" Text="Username"></asp:Label>

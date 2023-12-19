@@ -31,11 +31,51 @@ namespace WebApplication5
             string pass = password.Text;
             string eml = email.Text;
             string rol = role.SelectedValue;
-            AddUser(name, pass, eml , rol);
+
+            if (!VerifyEmailExistsOnce(eml, rol))
+                {
+                AddUser(name, pass, eml, rol); 
+            }
+            else
+            {
+                dataEntry.Text = "Email already exists. Please choose a different email.";
+            }
 
         }
 
+       
+        private bool VerifyEmailExistsOnce(string email, string role)
+        {
+            // Your connection string key from web.config
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
 
+            string selectQuery;
+            if (role == "Admin")
+            {
+                // SQL query to check if the email exists in the Admins table
+                selectQuery = "SELECT COUNT(*) FROM Admins WHERE email = @Email";
+            }
+            else
+            {
+                // SQL query to check if the email exists in the Moderators table
+                selectQuery = "SELECT COUNT(*) FROM Moderators WHERE email = @Email";
+            }
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(selectQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@Email", email);
+
+                    connection.Open();
+
+                    int count = (int)command.ExecuteScalar();
+
+                    // If count is greater than 0, the email already exists
+                    return count > 0;
+                }
+            }
+        }
 
         private void AddUser(string username, string password, string email, string role)
         {
@@ -77,6 +117,11 @@ namespace WebApplication5
         }
 
         protected void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void email_TextChanged(object sender, EventArgs e)
         {
 
         }
