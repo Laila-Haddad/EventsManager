@@ -73,8 +73,7 @@ namespace WebApplication5
                 }
             }
 
-            Response.Write("User added successfully!");
-
+            dataEntry.Text = "User Added succedully";
         }
 
     }

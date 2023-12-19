@@ -1,0 +1,106 @@
+/* AdminPage.css */
+
+/* Add general styling for the form */
+
+
+#form1 {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1ebeb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style textboxes */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+
+}
+
+#dataEntry {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block; /* Ensures that the label is displayed as a block element */
+    /* Add any additional styles you want here */
+}
+
+#usernameLabel,
+#passwordLabel,
+#emailLable ,
+#adminsLabel,
+#moderatorLabel{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+.navbar {
+    background-color: #ccc780; /* Set the background color of the navbar */
+    padding: 10px; /* Add some padding to the navbar */
+    color: #fff; /* Set the text color to white */
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center; /* Align items vertically in the center */
+    width: auto;
+    margin-top: -7px;
+    margin-right: -10px;
+    margin-left: -9px;
+}
+
+.admin-dashboard-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove margin to make it flush with the navbar */
+}
+
+/* Style dropdown list */
+#role {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style button */
+#addbtn {
+    background-color: #ccc780;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addbtn:hover {
+    background-color: #ccc780;
+}
+
+/* Style GridView */
+#GridView1, #GridView2 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#GridView1 th, #GridView2 th, #GridView1 td, #GridView2 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#GridView1 th, #GridView2 th {
+    background-color: #ccc780;
+    color: white;
+}

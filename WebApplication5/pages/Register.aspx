@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,23 +26,7 @@
         <p>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         </p>
-        <p>
-            Admins
-        </p>
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1">
-                <Columns>
-                    <asp:BoundField DataField="email" HeaderText="email" ReadOnly="True" SortExpression="email" />
-                    <asp:BoundField DataField="password" HeaderText="password" SortExpression="password" />
-                    <asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />
-                </Columns>
-            </asp:GridView>
-            <br />
-            <br />
-            <br />
-            Moderators <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT * FROM [Moderators]"></asp:SqlDataSource>
-            <asp:GridView ID="GridView2" runat="server">
-            </asp:GridView>
             <br />
             <br />
         </div>
