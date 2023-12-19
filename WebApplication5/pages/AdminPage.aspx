@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Admin Page</title>
     <link rel="stylesheet" type="text/css" href="../css/AdminPage.css" />
 </head>
 <body>
@@ -24,7 +24,7 @@
             <br />
             <asp:Label ID="usernameLabel" runat="server" Text="Username"></asp:Label>
             <br />
-            <asp:TextBox ID="username" runat="server"></asp:TextBox>
+            <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="passwordLabel" runat="server" Text="Password"></asp:Label>

@@ -111,7 +111,7 @@ namespace WebApplication5
                 }
             }
 
-            Response.Write("User added successfully!");
+            
 
         }
 
@@ -124,18 +124,8 @@ namespace WebApplication5
 
             AddUser(uname, pass, eml);
 
-            Label1.Text = "Registerd ";
+            //Label1.Text = "User added succefuly ";
 
-            /* if (IsValidUser(u, p))
-             {
-                // FormsAuthentication.RedirectFromLoginPage(u, false);
-                 // Assign roles if needed
-                 //AssignRoles(u);
-             }
-             else
-             {
-                 Label1.Text = "Invalid username or password.";
-             }*/
 
         }
 
@@ -145,6 +135,11 @@ namespace WebApplication5
         }
 
         protected void password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void email_TextChanged(object sender, EventArgs e)
         {
 
         }

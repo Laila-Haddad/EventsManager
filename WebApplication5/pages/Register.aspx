@@ -5,31 +5,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="../css/RegisterPage.css" />
 </head>
 <body>
+    <div class="background-container">
     <form id="form1" runat="server">
-        <p>
-            <br />
-            <asp:TextBox ID="userName" runat="server" OnTextChanged="userName_TextChanged"></asp:TextBox>
-        </p>
-        <p>
-            <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
-        </p>
-        <p>
-            <asp:TextBox ID="email" runat="server"></asp:TextBox>
-        </p>
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label1" runat="server"></asp:Label>
-        </p>
-        <p>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-        </p>
-        <div>
-            <br />
-            <br />
+<div class="form-section input-section">
+            <h1>Register Now!</h1>
+            <div class="form-group">
+                <asp:Label ID="UsernameLabel" runat="server" Text="Username"></asp:Label>
+                <asp:TextBox ID="userName" runat="server" OnTextChanged="userName_TextChanged"></asp:TextBox>
+        
+                <asp:Label ID="EmailLabel" runat="server" Text="Email"></asp:Label>
+                <asp:TextBox ID="email" runat="server" OnTextChanged="email_TextChanged"></asp:TextBox>
+          
+          
+                <asp:Label ID="PasswordLabel" runat="server" Text="Password"></asp:Label>
+                <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
+            </div>
+            <p>
+                <asp:Button ID="Registerbtn" runat="server" OnClick="Button1_Click" Text="Register" />
+            </p>
+            <div>
+                <asp:Label ID="Label1" runat="server"></asp:Label>
+                <br />
+                <br />
+            </div>
         </div>
+    
     </form>
+        </div>
 </body>
 </html>

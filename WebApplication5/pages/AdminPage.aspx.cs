@@ -76,5 +76,9 @@ namespace WebApplication5
             dataEntry.Text = "User Added succedully";
         }
 
+        protected void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
