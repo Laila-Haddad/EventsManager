@@ -35,7 +35,8 @@ input[type="text"] {
 #passwordLabel,
 #emailLable ,
 #adminsLabel,
-#moderatorLabel{
+#moderatorLabel,
+#userIdLable{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -74,7 +75,7 @@ input[type="text"] {
 }
 
 /* Style button */
-#addbtn {
+#addbtn ,#rmvbtn{
     background-color: #ccc780;
     color: #fff;
     padding: 10px 20px;
@@ -83,24 +84,24 @@ input[type="text"] {
     cursor: pointer;
 }
 
-#addbtn:hover {
+#addbtn,#rmvbtn:hover {
     background-color: #ccc780;
 }
 
 /* Style GridView */
-#GridView1, #GridView2 {
+#GridView1, #GridView2 ,#GridView3{
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-#GridView1 th, #GridView2 th, #GridView1 td, #GridView2 td {
+#GridView1 th, #GridView2 th,#GridView3 th, #GridView3 td, #GridView1 td, #GridView2 td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
-#GridView1 th, #GridView2 th {
+#GridView1 th, #GridView2 th, #GridView3 th {
     background-color: #ccc780;
     color: white;
 }
