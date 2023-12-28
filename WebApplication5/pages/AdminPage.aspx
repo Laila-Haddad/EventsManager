@@ -50,7 +50,7 @@
                 <asp:Label ID="adminsLabel" runat="server" Text="Admins"></asp:Label>
             </p>
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
                     <asp:BoundField DataField="email" HeaderText="email" ReadOnly="True" SortExpression="email" />
                     <asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />

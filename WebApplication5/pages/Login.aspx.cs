@@ -54,7 +54,7 @@ namespace WebApplication5.pages
                 else if (role.Equals("Moderator"))
                 {
                     //ADD MOD PAGE
-                   //Response.Redirect("~/pages/mod.aspx");
+                   Response.Redirect("~/pages/ModeratorPage.aspx");
                 }
 
                 else if (role.Equals("User"))
@@ -72,6 +72,11 @@ namespace WebApplication5.pages
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Username_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -24,7 +24,7 @@
     <body  style="background-color:#141414" data-home-page="https://website6099926.nicepage.io/Gallery-Page-1.html?version=1b461e91-c64a-e73d-f7c3-1c2e84962046" data-home-page-title="Gallery Page 1" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
     <section class="skrollable skrollable-between u-align-center u-clearfix u-image u-shading u-section-1" src="" id="carousel_74d8" data-image-width="1980" data-image-height="1131">
       <div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-xl u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000"> Where Can I Camp?</h1>
+        <h1 class="u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000"> Where Is My Next Event?</h1>
         <p class="u-large-text u-text u-text-variant u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"> Check out our programs and events such as camping, hicking and more!</p>
         <div class="u-clearfix u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -42,8 +42,7 @@
             </div>
           </div>
         </div>
-        <p class="u-text u-text-default u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Images from <a href="https://www.freepik.com/photos/nature" class="u-active-none u-border-1 u-border-no-left u-border-no-right u-border-no-top u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-top-left-radius-0 u-top-right-radius-0 u-btn-3" target="_blank">Freepik</a>
-        </p>
+        
       </div>
     </section>
     <section class="u-clearfix u-section-2" id="sec-cf32">
@@ -52,7 +51,7 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-1"><img src="../images/2325148-28c38e53.png" alt=""></span>
-                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-1">Trekking</h4>
+                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-1">hiking</h4>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
@@ -76,17 +75,17 @@
     </section>
     <section class="u-align-center u-clearfix u-container-align-center u-section-3" id="sec-237f">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1 u-shading"> Outdoor Recreation</h2>
-        <p class="u-align-center u-text u-text-2 u-shading">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        <h2 class="u-align-center u-text u-text-default u-text-1 u-shading"> Outdoor Events</h2>
+        <p class="u-align-center u-text u-text-2 u-shading">If you love nature like us, you came to the right place!</p>
         <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
           <div class="u-gallery-inner u-gallery-inner-1">
             <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
               <div class="u-back-slide" data-image-width="1380" data-image-height="920">
-                <img class="u-back-image u-expanded" src="../images/3.jpg" alt="Sample Headline">
+                <img class="u-back-image u-expanded" src="../images/3.jpg" alt="Groups">
               </div>
               <div class="u-over-slide u-shading u-over-slide-1">
-                <h3 class="u-gallery-heading">Sample Headline</h3>
-                <p class="u-gallery-text">sample text</p>
+                <h3 class="u-gallery-heading">Groups</h3>
+               
               </div>
             </div>
             <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
@@ -94,8 +93,8 @@
                 <img class="u-back-image u-expanded" src="../images/37.jpg" alt="Sample Headline">
               </div>
               <div class="u-over-slide u-shading u-over-slide-2">
-                <h3 class="u-gallery-heading">Sample Headline</h3>
-                <p class="u-gallery-text">sample text</p>
+                <h3 class="u-gallery-heading">Night camps </h3>
+                
               </div>
             </div>
             <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
@@ -103,8 +102,8 @@
                 <img class="u-back-image u-expanded" src="../images/fd.jpg" alt="Sample Headline">
               </div>
               <div class="u-over-slide u-shading u-over-slide-3">
-                <h3 class="u-gallery-heading">Sample Headline</h3>
-                <p class="u-gallery-text">sample text</p>
+                <h3 class="u-gallery-heading">Adventure lovers</h3>
+             
               </div>
             </div>
             <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
@@ -127,7 +126,7 @@
             </div>
           </div>
         </div>
-        <p class="u-align-center u-text u-text-3">Images from <a href="https://www.freepik.com/" class="u-border-1 u-border-active-palette-3-base u-border-black u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-1" target="_blank">Freepik</a>
+       
         </p>
         <a href="#" class="u-align-center u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-2">more photos</a>
       </div>
@@ -153,7 +152,7 @@
       
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0"> Find your next getaway</h2>
-        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"> Find the group you belong to!.</p>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="800" data-image-height="533">
@@ -161,7 +160,7 @@
                 <div class="u-black u-container-align-center u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-1">
                   <div class="u-container-layout u-valign-middle u-container-layout-2">
                     <h4 class="u-align-center u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Best RV camping</h4>
-                    <p class="u-align-center u-text u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Sample text. Click to select the Text Element.</p>
+                   
                   </div>
                 </div>
               </div>
@@ -171,8 +170,7 @@
                 <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-2">
                   <div class="u-container-layout u-valign-middle u-container-layout-4">
                     <h4 class="u-align-center u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Lake camping</h4>
-                    <p class="u-align-center u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Sample text. Click to select the Text Element.</p>
-                  </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -181,8 +179,7 @@
                 <div class="u-black u-container-align-center u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-3">
                   <div class="u-container-layout u-valign-middle u-container-layout-6">
                     <h4 class="u-align-center u-text u-text-7" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Beach stays</h4>
-                    <p class="u-align-center u-text u-text-8" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Sample text. Click to select the Text Element.</p>
-                  </div>
+                       </div>
                 </div>
               </div>
             </div>
@@ -191,8 +188,7 @@
                 <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-4">
                   <div class="u-container-layout u-valign-middle u-container-layout-8">
                     <h4 class="u-align-center u-text u-text-9" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Backyard Camping</h4>
-                    <p class="u-align-center u-text u-text-10" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Sample text. Click to select the Text Element.</p>
-                  </div>
+                     </div>
                 </div>
               </div>
             </div>
@@ -201,8 +197,7 @@
                 <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-5">
                   <div class="u-container-layout u-valign-middle u-container-layout-10">
                     <h4 class="u-align-center u-text u-text-11" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> car camping</h4>
-                    <p class="u-align-center u-text u-text-12" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Sample text. Click to select the Text Element.</p>
-                  </div>
+                       </div>
                 </div>
               </div>
             </div>
@@ -211,15 +206,13 @@
                 <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-6">
                   <div class="u-container-layout u-valign-middle u-container-layout-12">
                     <h4 class="u-align-center u-text u-text-13" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Wilderness Camping</h4>
-                    <p class="u-align-center u-text u-text-14" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Sample text. Click to select the Text Element.</p>
-                  </div>
+                     </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <p class="u-align-center u-text u-text-default u-text-15" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Image from <a href="https://www.freepik.com" class="u-border-1 u-border-active-palette-2-light-2 u-border-hover-palette-2-light-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-none u-radius-0 u-text-body-alt-color u-top-left-radius-0 u-top-right-radius-0 u-btn-1" target="_blank">Freepik</a>
-        </p>
+        
       </div>
     </section>
     <section class="u-align-center u-clearfix u-container-align-center u-section-5" id="sec-d633">
@@ -236,7 +229,6 @@
                     <p class="u-align-center u-text u-text-3"> Sites on the rise</p>
                   </div>
                 </div>
-                <p class=" u-align-center u-text u-text-4 u-shading">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                 <a href="" class="u-shading u-align-center u-border-1 u-border-active-palette-2-base u-border-grey u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-body-color u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-1 u-shading">learn more</a>
               </div>
             </div>
@@ -249,7 +241,6 @@
                     <p class="u-align-center u-text u-text-6"> Our top picks</p>
                   </div>
                 </div>
-                <p class="u-shading u-align-center u-text u-text-7">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                 <a href="" class="u-shading u-align-center u-border-1 u-border-active-palette-2-base u-border-grey u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-body-color u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
               </div>
             </div>
@@ -262,8 +253,7 @@
                     <p class="u-align-center u-text u-text-9">Exercitation ullamco</p>
                   </div>
                 </div>
-                <p class="u-align-center u-text u-text-10 u-shading">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-align-center u-shading u-border-1 u-border-active-palette-2-base u-border-grey u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-body-color u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
+                  <a href="" class="u-align-center u-shading u-border-1 u-border-active-palette-2-base u-border-grey u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-body-color u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
               </div>
             </div>
           </div>
@@ -278,10 +268,8 @@
               <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <h2 class="u-text u-text-1">Contact Us</h2>
-                  <p class="u-text u-text-body-alt-color u-text-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p class="u-align-left u-text u-text-3">Images from <a href="https://www.freepik.com/photos/man-with-dog" class="u-border-1 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-1">Freepik</a>
-                  </p>
-                  <a href="#" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50 u-text-active-black u-text-hover-black u-btn-2">Contact Us</a>
+                  <p class="u-text u-text-body-alt-color u-text-2">Your Opinions Matter to us</p>
+                   <a href="#" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50 u-text-active-black u-text-hover-black u-btn-2">Contact Us</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
