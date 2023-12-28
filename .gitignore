@@ -5,3 +5,5 @@ WebApplication5/bin/WebApplication5.pdb
 .vs/WebApplication5/config/applicationhost.config
 .vs/WebApplication5/config/applicationhost.config
 
+*.config
+*.cache
