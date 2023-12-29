@@ -11,7 +11,7 @@ Inherits="WebApplication5.pages.WebForm1" %>
     <meta name="description" content="" />
     <title>Log In</title>
     <link rel="stylesheet" href="../css/nicepage.css" media="screen" />
-    <link rel="stylesheet" href="../css/Page-7.css" media="screen" />
+    <link rel="stylesheet" href="../css/login.css" media="screen" />
     <script
       class="u-script"
       type="text/javascript"
@@ -75,6 +75,10 @@ Inherits="WebApplication5.pages.WebForm1" %>
                         <asp:Label ID="Label1" class="u-label u-label-1" style="color:indianred ;padding-left:30px ; margin:auto" runat="server" Text=""></asp:Label>
 
 
+
+
+
+
                       <div class="u-form-group u-form-name">
                         <label
                           for="name-319a"
@@ -92,29 +96,12 @@ Inherits="WebApplication5.pages.WebForm1" %>
                         ></asp:TextBox>
                       </div>
 
-                        <div
-                        class="u-form-email u-form-group u-form-partition-factor-2"
-                      >
-                        <label
-                          for="email-319a"
-                          class="u-label u-text-body-alt-color u-label-3"
-                        >
-                          Email</label
-                        >
 
-                        <asp:TextBox
-                          ID="Email"
-                          TextMode="Email"
-                          class="u-transparent u-border-1 u-border-no-left u-border-no-right u-border-no-top u-border-gray u-input u-input-rectangle"
-                          required=""
-                          runat="server"
-                          placeholder="Enter email address"
-                            style="background-color: transparent !important"
-                        ></asp:TextBox>
 
-                      </div>
+
+
                       <div
-                        class="u-form-group u-form-partition-factor-2 u-form-group-2"
+                        class="u-form-group u-form-name"
                       >
                         <label
                           for="text-9382"
@@ -133,6 +120,11 @@ Inherits="WebApplication5.pages.WebForm1" %>
                         ></asp:TextBox>
                       </div>
                       
+
+
+
+
+
                       <div class="u-form-group u-form-select u-form-group-4">
                         <label
                           for="select-2fd8"

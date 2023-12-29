@@ -20,7 +20,6 @@ namespace WebApplication5.pages
         {
             //extract info from the page
             string name = Username.Text;
-            string email = Email.Text;
             string password = Password.Text;
             string role = DropDownList1.SelectedValue;
 
@@ -29,13 +28,12 @@ namespace WebApplication5.pages
             conn.Open();
 
             //build query depending on dropdown list role choice
-            string query= "SELECT * FROM "+role+"s WHERE username=@username AND email = @email AND password = @password ";
+            string query= "SELECT * FROM "+role+"s WHERE username=@username AND password = @password ";
             SqlCommand cmd = new SqlCommand(query, conn);
 
             //build prepared statement
             cmd.Prepare();
             cmd.Parameters.AddWithValue("@username", name);
-            cmd.Parameters.AddWithValue("@email", email);
             cmd.Parameters.AddWithValue("@password", password);
             SqlDataReader data = cmd.ExecuteReader();
 
@@ -77,6 +75,11 @@ namespace WebApplication5.pages
         }
 
         protected void Username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Email_TextChanged(object sender, EventArgs e)
         {
 
         }
