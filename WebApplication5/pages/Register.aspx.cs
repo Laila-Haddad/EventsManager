@@ -18,7 +18,7 @@ namespace WebApplication5
         }
 
      
-        private bool VerifyEmailExistsOnce(string email)
+        private bool VerifyEmailExistsOnce(string email, string username)
         {
             // Your connection string key from web.config
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
@@ -26,7 +26,7 @@ namespace WebApplication5
             string selectQuery;
            
                 // SQL query to check if the email exists in the Admins table
-                selectQuery = "SELECT COUNT(*) FROM Users WHERE email = @Email";
+                selectQuery = "SELECT COUNT(*) FROM Users WHERE email = @Email OR username=@Username ";
 
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -34,6 +34,8 @@ namespace WebApplication5
                 using (SqlCommand command = new SqlCommand(selectQuery, connection))
                 {
                     command.Parameters.AddWithValue("@Email", email);
+                    command.Parameters.AddWithValue("@Username", username);
+
 
                     connection.Open();
 
@@ -44,12 +46,12 @@ namespace WebApplication5
                 }
             }
         }
-        private void AddUser(string username, string password,string email) {
+        private void AddUser(string username, string password, string email, string phoneNumber) {
             // Your connection string key from web.config
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
 
             // SQL query to insert a new user into the Users table
-            string insertQuery = "INSERT INTO Users (username, password,email) VALUES (@Username, @Password,@Email)";
+            string insertQuery = "INSERT INTO Users (username, password,email,phoneNumber) VALUES (@Username, @Password,@Email,@phoneNumber)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -59,6 +61,8 @@ namespace WebApplication5
                     command.Parameters.AddWithValue("@Username", username);
                     command.Parameters.AddWithValue("@Password", password);
                     command.Parameters.AddWithValue("@Email", email);
+                    command.Parameters.AddWithValue("@phoneNumber", phoneNumber);
+
 
                     connection.Open();
 
@@ -78,10 +82,11 @@ namespace WebApplication5
             string uname = userName.Text;
             string pass = password.Text;
             string eml = email.Text;
+            string phon =phone.Text ;
 
-            if (!VerifyEmailExistsOnce(eml))
+            if (!VerifyEmailExistsOnce(eml, uname))
             {
-                AddUser(uname, pass, eml);
+                AddUser(uname, pass, eml, phon);
 
                 Response.Redirect("~/pages/Home.aspx");
                 Session["UserRole"] = "User";
