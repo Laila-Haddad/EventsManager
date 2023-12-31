@@ -1,149 +1,173 @@
-﻿    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminPage.aspx.cs" Inherits="WebApplication5.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminPage.aspx.cs" Inherits="WebApplication5.pages.WebForm5" %>
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
-        <title>Admin Page</title>
-        <link rel="stylesheet" type="text/css" href="../css/AdminPage.css" />
-    </head>
-    <body>
-           <form id="form1" runat="server">
-          <div class="navbar">
-        <asp:Label ID="adminDashboardLabel" runat="server" Text="Admin Dashboard" CssClass="admin-dashboard-heading"></asp:Label>
-        </div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+<body>
+    <form runat="server">
+        <div class="container-scroller">
+  
 
-        <div class="sidebar">
-        <h2>Sidebar</h2>
-        <nav>
-            <ul>
-                <li><a href="#tab1">Tab 1</a></li>
-                <li><a href="#tab2">Tab 2</a></li>
-                <li><a href="#tab3">Tab 3</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="content">
-    
-    
-        <div id="tab1" class="tab-content">
-            <h3>Tab 1 Content</h3>
-
-            <div>
-                 <br />
-                <asp:Label ID="emailLable" runat="server" Text="Email"></asp:Label>
-                <br />
-                <asp:TextBox ID="email" runat="server" OnTextChanged="email_TextChanged"></asp:TextBox>
-                <br />
-                <br />
-                <asp:Label ID="usernameLabel" runat="server" Text="Username"></asp:Label>
-                <br />
-                <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged"></asp:TextBox>
-                <br />
-                <br />
-                <asp:Label ID="passwordLabel" runat="server" Text="Password"></asp:Label>
-                <br />
-                <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
-                <br />
-                <br />
-                <br />
-                <asp:DropDownList ID="role" runat="server">
-                    <asp:ListItem Selected="True">Admin</asp:ListItem>
-                    <asp:ListItem>Moderator</asp:ListItem>
-                </asp:DropDownList>
-                <br />
-                <br />
-                <asp:Button ID="addbtn" runat="server" OnClick="addbtn_Click" Text="Add" />
-                <br />
-                <br />
-                <br />
-                <asp:Label ID="dataEntry" runat="server"></asp:Label>
-            <p>
-                &nbsp;</p>
-            </div>
-
-        </div>
-     
-
-        <div id="tab2" class="tab-content">
-            <h3>Tab 2 Content</h3>
+            <!-- partial:partials/_navbar.html -->
+            <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="index.html">
+                        <img src="assets/images/logo.svg" alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini" href="index.html">
+                        <img src="assets/images/logo-mini.svg" alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
       
-           <div>
-                <p>
-                    <asp:Label ID="adminsLabel" runat="server" Text="Admins"></asp:Label>
-                </p>
-            <div>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
-                    <Columns>
-                        <asp:BoundField DataField="email" HeaderText="email" ReadOnly="True" SortExpression="email" />
-                        <asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />
-                    </Columns>
-                </asp:GridView>
-                <br />
-                <br />
-                <br />
-           </div>
-        </div>
-            
+
+
+
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item nav-profile dropdown">
+
+                            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="mdi mdi-logout me-2 text-primary"></i>Signout </a>
+                            </div>
+                        </li>
+
+      
+                        <li class="nav-item nav-logout d-none d-lg-block">
+                            <a class="nav-link" href="Login.aspx">
+                                <i class="mdi mdi-power"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                </div>
+            </nav>
+
+
+
+
+            <!-- partial -->
+
+
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminPage1.aspx">
+                                <span class="menu-title">Admins</span>
+                                <i class="mdi mdi-table-large menu-icon"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminFunctions/ModeratorsTable.aspx">
+                                <span class="menu-title">Moderators</span>
+                                <i class="mdi mdi-table-large menu-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminFunctions/AddRemoveAdminsAndModerators.aspx">
+                                <span class="menu-title">Add/Remove</span>
+                                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminFunctions/Reports.aspax">
+                                <span class="menu-title">Reports</span>
+                                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+
+                <!-- partial -->
+
+                <div style="width: 50%; align-content: center; margin: auto; margin-top: 38px;">
+
+                    <p class="card-description">
+                        Admins 
+                    </p>
+
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1" class="table">
+                        <Columns>
+                            <asp:BoundField DataField="email" HeaderText="email" ReadOnly="True" SortExpression="email" />
+                            <asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT [email], [username] FROM [Admins]"></asp:SqlDataSource>
+
+
+                </div>
+                <%--    
+          <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+            </div>
+          </footer>--%>
+
+
+                <!-- partial -->
             </div>
 
-        <div id="tab3" class="tab-content">
-            <h3>Tab 3 Content</h3>
 
 
 
-
-
-            <div>
-           
-           
-                <asp:Label ID="moderatorLabel" runat="server" Text="Moderators"></asp:Label>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT [email], [username] FROM [Admins]"></asp:SqlDataSource>
-                <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource2">
-                    <Columns>
-                        <asp:BoundField DataField="email" HeaderText="email" ReadOnly="True" SortExpression="email" />
-                        <asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />
-                    </Columns>
-                </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT [email], [username] FROM [Moderators]"></asp:SqlDataSource>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-            <h3>Tab 4 Content</h3>
-
-
-
-
-
-                <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource3" Height="113px" Width="279px">
-                    <Columns>
-                        <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
-                        <asp:BoundField DataField="reportedUserId" HeaderText="reportedUserId" SortExpression="reportedUserId" />
-                        <asp:BoundField DataField="reason" HeaderText="reason" SortExpression="reason"></asp:BoundField>
-                        <asp:BoundField DataField="status" HeaderText="status" SortExpression="status"></asp:BoundField>
-                    </Columns>
-                </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT * FROM [Reports]"></asp:SqlDataSource>
-                <br />
-                <asp:Label ID="userIdLable" runat="server" Text="User Id"></asp:Label>
-                <br />
-                <asp:TextBox ID="email0" runat="server" OnTextChanged="email_TextChanged"></asp:TextBox>
-                <br />
-                <br />
-                <asp:Button ID="rmvbtn0" runat="server" OnClick="addbtn_Click" Text="Remove" />
-            </div>
- 
+            <!-- main-panel ends -->
         </div>
 
+        <!-- page-body-wrapper ends -->
+        </div>
+    <!-- container-scroller -->
+        <!-- plugins:js -->
 
 
 
-    </div>
+
+        <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page -->
+        <script src="assets/vendors/chart.js/Chart.min.js"></script>
+        <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+        <!-- End plugin js for this page -->
+        <!-- inject:js -->
+        <script src="assets/js/off-canvas.js"></script>
+        <script src="assets/js/hoverable-collapse.js"></script>
+        <script src="assets/js/misc.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page -->
+        <script src="assets/js/dashboard.js"></script>
+        <script src="assets/js/todolist.js"></script>
+        <!-- End custom js for this page -->
 
 
-       </form>
-    </body>
-    </html>
+
+    </form>
+</body>
+</html>

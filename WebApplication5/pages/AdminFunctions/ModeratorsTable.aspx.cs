@@ -11,7 +11,11 @@ namespace WebApplication5.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserRole"] == null || (string)Session["UserRole"] != "Admin")
+            {
+                // if null or not admin redirect to unauthorized access page
+                Response.Redirect("~/pages/UnauthorizedAccess.aspx");
+            }
         }
     }
 }

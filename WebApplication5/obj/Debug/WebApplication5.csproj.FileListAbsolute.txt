@@ -1,4 +1,3 @@
-X:\Lecs\Wp2\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
 X:\Lecs\Wp2\WebApplication5\WebApplication5\bin\WebApplication5.dll
 X:\Lecs\Wp2\WebApplication5\WebApplication5\bin\WebApplication5.pdb
 X:\Lecs\Wp2\WebApplication5\WebApplication5\bin\roslyn\csc.exe
@@ -238,3 +237,4 @@ C:\Users\laila\OneDrive\Documents\GitHub\EventsManager\WebApplication5\bin\rosly
 C:\Users\laila\OneDrive\Documents\GitHub\EventsManager\WebApplication5\bin\roslyn\vbc.rsp
 C:\Users\laila\OneDrive\Documents\GitHub\EventsManager\WebApplication5\bin\roslyn\VBCSCompiler.exe
 C:\Users\laila\OneDrive\Documents\GitHub\EventsManager\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+X:\Lecs\Wp2\WebApplication5\WebApplication5\bin\WebApplication5.dll.config

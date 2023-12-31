@@ -7,3 +7,10 @@ WebApplication5/bin/WebApplication5.pdb
 
 *.config
 *.cache
+*.config
+.vs/WebApplication5/config/applicationhost.config
+WebApplication5/bin/WebApplication5.dll.config
+WebApplication5/WebApplication5.csproj.user
+WebApplication5/WebApplication5.csproj.user
+WebApplication5/WebApplication5.csproj.user
+.vs/WebApplication5/config/applicationhost.config

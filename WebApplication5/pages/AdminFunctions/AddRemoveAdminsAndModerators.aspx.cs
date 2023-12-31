@@ -13,11 +13,11 @@ namespace WebApplication5.pages.AdminFunctions
         protected void Page_Load(object sender, EventArgs e)
         {
             //check the session variable to see the user role
-            //if (Session["UserRole"] == null || (string)Session["UserRole"] != "Admin")
-            //{
-            //    // if null or not admin redirect to unauthorized access page
-            //    Response.Redirect("~/pages/UnauthorizedAccess.aspx");
-            //}
+            if (Session["UserRole"] == null || (string)Session["UserRole"] != "Admin")
+            {
+                // if null or not admin redirect to unauthorized access page
+                Response.Redirect("~/pages/UnauthorizedAccess.aspx");
+            }
         }
 
         protected void password_TextChanged(object sender, EventArgs e)
