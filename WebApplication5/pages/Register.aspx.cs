@@ -90,6 +90,7 @@ namespace WebApplication5
 
                 Response.Redirect("~/pages/Home.aspx");
                 Session["UserRole"] = "User";
+                Session["Username"] = uname;
 
             }
             else

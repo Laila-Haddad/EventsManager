@@ -43,6 +43,7 @@ namespace WebApplication5.pages
             {
                 //set a session variable with the user role
                 Session["UserRole"] = role;
+                Session["Username"] = name;
 
                 if (role.Equals("Admin"))
                 {

@@ -8,130 +8,242 @@
     <meta charset="utf-8">
     <meta name="keywords" content="​Outdoor Recreation">
     <meta name="description" content="">
-    <title>Gallery Page 1</title>
-    <link rel="stylesheet" href="../css/nicepage.css" media="screen">
-<link rel="stylesheet" href="../css/Gallery-Page-1.css" media="screen">
+    <title>Home</title>
+<link rel="stylesheet" href="../css/home.css" media="screen">
+    <link rel="stylesheet" href="../css/nicepage1.css" media="screen">
+
     <script class="u-script" type="text/javascript" src="../js/jquery-1.9.1.min.js" defer=""></script>
     <meta name="generator" content="Nicepage 6.1.8, nicepage.com">
     <meta name="referrer" content="origin">
-   <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Gallery Page 1">
-    <meta property="og:type" content="website">
     <link rel="canonical" href="/">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+    <style>
+        
+
+.hamburger{
+  
+  background-color: transparent;
+  width: fit-content;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 15px;
+    margin-top: 50px;
+    right: 0;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #1d1d1d;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1em 0;
+    width: 100%;
+    color: white !important;
+    background-color: #141414;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #151515;
+  }
+
+    </style>
 </head>
 
-    <body  style="background-color:#141414" data-home-page="https://website6099926.nicepage.io/Gallery-Page-1.html?version=1b461e91-c64a-e73d-f7c3-1c2e84962046" data-home-page-title="Gallery Page 1" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
-    <section class="skrollable skrollable-between u-align-center u-clearfix u-image u-shading u-section-1" src="" id="carousel_74d8" data-image-width="1980" data-image-height="1131">
-      <div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-xl u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000"> Where Is My Next Event?</h1>
-        <p class="u-large-text u-text u-text-variant u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"> Check out our programs and events such as camping, hicking and more!</p>
-        <div class="u-clearfix u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+    <body style="background-color:#141414" class="u-body u-xl-mode" data-lang="en">
+        <form id="form1" runat="server">
+   <header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-e1a4 u-header" id="sec-c67f"><div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="../images/photo_2023-12-17_19-40-38.png" alt="" data-image-width="700" data-image-height="700">
+        <h3 class="u-align-left u-text u-text-default u-text-1">EventFul</h3>
+
+
+        <div class="data-layout-selected u-clearfix u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
-              <div class="u-align-right u-container-align-right-sm u-container-align-right-xs u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
-                <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <a href="https://nicepage.com/k/radio-website-templates" class="u-align-right-sm u-align-right-xs u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1"> camping sites</a>
+              <div class="u-align-right u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                 
+                  
+                    <asp:HyperLink ID="login" NavigateUrl="~/pages/Login.aspx" runat="server" class="u-border-2 u-border-custom-color-2 u-btn u-btn-round u-button-style u-custom-color-2 u-radius-50 u-btn-1">Login</asp:HyperLink>
                 </div>
               </div>
-              <div class="u-align-left u-container-align-left-sm u-container-align-left-xs u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
-                <div class="u-container-layout u-valign-top u-container-layout-2">
-                  <a href="https://nicepage.review" class="u-active-white u-align-left-sm u-align-left-xs u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50 _-active-black u-text-hover-black u-btn-2"> EVENTS NEAR ME</a>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-container-layout-2">
+              
+                    <asp:HyperLink ID="register" NavigateUrl="~/pages/Register.aspx" runat="server" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50 u-text-active-black u-text-hover-black u-btn-2">Register</asp:HyperLink>
+                    </div>
+
+
+                    <div>
+                        <asp:Label ID="userMenu" runat="server" Text="Label">
+       <section  class="hamburger">
+
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu" style="width: 150px;">
+      <li> <asp:Label ID="uname" runat="server" Text="Hello "></asp:Label></li>
+      <li><a href="Home.aspx">Home</a></li>
+      <li><a href="">Booked events</a></li>
+      <li><a href="UserFunctions/RequestEvent.aspx">Request event</a></li>
+      <li>
+          <asp:Button ID="logout" runat="server" OnClick="logout_Click" Text="log Out" style="border:none; background-color:transparent; color:indianred; cursor:pointer" />
+          </li>
+
+    </ul>
+  </section>
+                            </asp:Label>
                 </div>
               </div>
+
+              
+
             </div>
           </div>
         </div>
-        
-      </div>
-    </section>
-    <section class="u-clearfix u-section-2" id="sec-cf32">
+      </div></header>
+    <section class="skrollable skrollable-between u-align-center u-clearfix u-image u-shading u-section-1" src="" id="carousel_74d8" data-image-width="1980" data-image-height="1131">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-expanded-width u-list u-list-1">
+        <h1 class="u-align-center u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">Your Gateway to Unforgettable Experiences</h1>
+        <p class="u-large-text u-text u-text-variant u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">&nbsp;Immerse yourself in a tapestry of experiences, curated to bring joy, excitement, and enrichment to your life. Explore, engage, and make memories that last a lifetime with EventFul!</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-1 u-section-2" id="sec-cf32">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-1"><img src="../images/2325148-28c38e53.png" alt=""></span>
-                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-1">hiking</h4>
+            <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-1"><img src="../images/1941070-27c0c530.png" alt=""></span>
+                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-1">concerts &amp; performences</h4>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-2"><img src="../images/7401471-4294aa1a.png" alt=""></span>
-                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-2">Camping</h4>
+            <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-2"><img src="../images/7401471-4294aa1a.png" alt=""></span>
+                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-2">Camping &amp; outdoors</h4>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-3"><img src="../images/931077-6ca510ad.png" alt=""></span>
-                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-3"> Beach Tents</h4>
+            <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-3"><img src="../images/7598570-f334a584.png" alt=""></span>
+                <h4 class="u-align-center u-text u-text-3">sports &amp; fitness</h4>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
-              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-4"><img src="../images/2560416-11b1db70.png" alt=""></span>
-                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-4"> News &amp; Events</h4>
+            <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-4"><img src="../images/1756784-328473b4.png" alt=""></span>
+                <h4 class="u-align-center u-custom-font u-text u-text-font u-text-4"> art &amp; workshops</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-container-align-center u-section-3" id="sec-237f">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1 u-shading"> Outdoor Events</h2>
-        <p class="u-align-center u-text u-text-2 u-shading">If you love nature like us, you came to the right place!</p>
+    <section class="u-align-center u-clearfix u-custom-color-1 u-section-3" id="sec-237f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-1">Concerts and Performances</h2>
+        <p class="u-align-center u-text u-text-2"> From chart-topping artists to local talents, our Concerts and Performances category brings you an unforgettable experience.</p>
         <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
           <div class="u-gallery-inner u-gallery-inner-1">
             <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-              <div class="u-back-slide" data-image-width="1380" data-image-height="920">
-                <img class="u-back-image u-expanded" src="../images/3.jpg" alt="Groups">
+              <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+                <img class="u-back-image u-expanded" src="../images/guitar.jpg" alt="Sample Headline">
               </div>
               <div class="u-over-slide u-shading u-over-slide-1">
-                <h3 class="u-gallery-heading">Groups</h3>
-               
+                <h3 class="u-gallery-heading">Guitar Performance</h3>
+                <p class="u-gallery-text">the local bar offers all sorts of performances with small artists</p>
               </div>
             </div>
             <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-              <div class="u-back-slide" data-image-width="1480" data-image-height="833">
-                <img class="u-back-image u-expanded" src="../images/37.jpg" alt="Sample Headline">
+              <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+                <img class="u-back-image u-expanded" src="../images/b61278f8f9cdd3ed2a81c0a328e597d0583f6c2868b686ade383b83e8108742ed5d50bc24752c661c2c63ca6c8574faae8456f62a618f8dbae98ef_1280.jpg" alt="Sample Headline">
               </div>
               <div class="u-over-slide u-shading u-over-slide-2">
-                <h3 class="u-gallery-heading">Night camps </h3>
-                
+                <h3 class="u-gallery-heading">Pop Concerts</h3>
+                <p class="u-gallery-text">Feel alive with the local open air conects held in the park</p>
               </div>
             </div>
             <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-              <div class="u-back-slide" data-image-width="740" data-image-height="833">
-                <img class="u-back-image u-expanded" src="../images/fd.jpg" alt="Sample Headline">
+              <div class="u-back-slide" data-image-width="1280" data-image-height="854">
+                <img class="u-back-image u-expanded" src="../images/34ca7d33628132fc3065841e8f58f738d6adadebd50469e867ce5d37e07fb2252dbc94a8f076bd5cc79fb5e75dea4486aa8e13e9ddd3f790ea5ade_1280.jpg" alt="Sample Headline">
               </div>
               <div class="u-over-slide u-shading u-over-slide-3">
-                <h3 class="u-gallery-heading">Adventure lovers</h3>
-             
+                <h3 class="u-gallery-heading">Classical Music</h3>
+                <p class="u-gallery-text">Let the violin make you forget your sorrow</p>
               </div>
-            </div>
-            <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-              <div class="u-back-slide" data-image-width="800" data-image-height="800">
-                <img class="u-back-image u-expanded" src="../images/lifestyle-people-living-e.jpg">
-              </div>
-              <div class="u-over-slide u-shading u-over-slide-4"></div>
-            </div>
-            <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-              <div class="u-back-slide" data-image-width="1380" data-image-height="920">
-                <img class="u-back-image u-expanded" src="../images/t5.jpg">
-              </div>
-              <div class="u-over-slide u-shading u-over-slide-5"></div>
-            </div>
-            <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-              <div class="u-back-slide" data-image-width="800" data-image-height="1200">
-                <img class="u-back-image u-expanded" src="../images/r6.jpg">
-              </div>
-              <div class="u-over-slide u-shading u-over-slide-6"></div>
             </div>
           </div>
         </div>
-       
-        </p>
-        <a href="#" class="u-align-center u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-2">more photos</a>
+        <a href="#" class="u-align-center u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1">Go to category</a>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-container-align-center u-palette-2-base u-section-4" id="sec-185a">
+    <section class="u-align-center u-clearfix u-custom-color-2 u-section-4" id="sec-185a">
       
       
       
@@ -150,185 +262,181 @@
       
       
       
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0"> Find your next getaway</h2>
-        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"> Find the group you belong to!.</p>
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0">Camping and Outdoors</h2>
+        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"> Make new friends, share laughter, and create lasting memories in a welcoming atmosphere.</p>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="800" data-image-height="533">
+            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="800" data-image-height="800">
               <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
                 <div class="u-black u-container-align-center u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-1">
-                  <div class="u-container-layout u-valign-middle u-container-layout-2">
-                    <h4 class="u-align-center u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Best RV camping</h4>
-                   
+                  <div class="u-container-layout u-container-layout-2">
+                    <h4 class="u-align-center u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">LAKE CAMPING</h4>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="800" data-image-height="533">
+            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="740" data-image-height="833">
               <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
                 <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-2">
-                  <div class="u-container-layout u-valign-middle u-container-layout-4">
-                    <h4 class="u-align-center u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Lake camping</h4>
-                      </div>
+                  <div class="u-container-layout u-container-layout-4">
+                    <h4 class="u-align-center u-text u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">FOREST hike</h4>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="626" data-image-height="533">
+            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="1480" data-image-height="833">
               <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-5">
-                <div class="u-black u-container-align-center u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-3">
-                  <div class="u-container-layout u-valign-middle u-container-layout-6">
-                    <h4 class="u-align-center u-text u-text-7" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Beach stays</h4>
-                       </div>
-                </div>
-              </div>
-            </div>
-            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="740" data-image-height="925">
-              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-7">
-                <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-4">
-                  <div class="u-container-layout u-valign-middle u-container-layout-8">
-                    <h4 class="u-align-center u-text u-text-9" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Backyard Camping</h4>
-                     </div>
-                </div>
-              </div>
-            </div>
-            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-5" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="740" data-image-height="925">
-              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-9">
-                <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-5">
-                  <div class="u-container-layout u-valign-middle u-container-layout-10">
-                    <h4 class="u-align-center u-text u-text-11" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> car camping</h4>
-                       </div>
-                </div>
-              </div>
-            </div>
-            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-6" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="740" data-image-height="925">
-              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-11">
-                <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-6">
-                  <div class="u-container-layout u-valign-middle u-container-layout-12">
-                    <h4 class="u-align-center u-text u-text-13" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Wilderness Camping</h4>
-                     </div>
+                <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <h4 class="u-align-center u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500"> Beach GATHERINGS</h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+        <a href="https://nicepage.review" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-50 u-text-active-black u-text-hover-black u-white u-btn-1">GO TO CATEGORY</a>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-container-align-center u-section-5" id="sec-d633">
+    <section class="u-align-center u-clearfix u-container-align-center u-custom-color-1 u-section-5" id="sec-d633">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1 u-shading"> Where to go now</h2>
+        <h2 class="u-align-center u-text u-text-default u-text-1"> Art and Workshops</h2>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-1">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="700" data-image-height="652" src="../images/young-rural-travellers-picnic3.jpg">
-                <div class="u-align-center u-container-align-center u-container-style u-group u-palette-2-base u-group-1">
-                  <div class="u-container-layout u-valign-middle u-container-layout-2">
-                    <h4 class="u-align-center u-text u-text-default u-text-2"> Hidden gems</h4>
-                    <p class="u-align-center u-text u-text-3"> Sites on the rise</p>
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1280" data-image-height="855" src="../images/e0b0394f900757af8c75e5c7c01fe34bad4313226dd73855d78ea71c4932973785b2451e34facf5b7a4e7bd48bb7f404eaeeb85189e57f15d0c32e_1280.jpg">
+                <div class="u-align-center u-container-style u-group u-palette-2-base u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <h4 class="u-text u-text-2">sewing and knitting</h4>
                   </div>
                 </div>
-                <a href="" class="u-shading u-align-center u-border-1 u-border-active-palette-2-base u-border-grey u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-body-color u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-1 u-shading">learn more</a>
+                <p class="u-align-center u-text u-text-3"> Join our Knitting Gatherings to discover the joy of creating beautiful, handcrafted textiles.&nbsp;</p>
+                <a href="" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-1">learn more</a>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center-sm u-container-align-center-xl u-container-align-center-xs u-container-style u-list-item u-repeater-item">
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="700" data-image-height="652" src="../images/689.jpg">
-                <div class="u-align-center u-container-align-center u-container-style u-group u-palette-2-base u-group-2">
-                  <div class="u-container-layout u-valign-middle u-container-layout-4">
-                    <h4 class="u-align-center u-text u-text-default u-text-5"> Cottage stays</h4>
-                    <p class="u-align-center u-text u-text-6"> Our top picks</p>
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="1280" data-image-height="853" src="../images/wood.jpg">
+                <div class="u-align-center u-container-style u-group u-palette-2-base u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <h4 class="u-text u-text-4">Woodwork</h4>
                   </div>
                 </div>
-                <a href="" class="u-shading u-align-center u-border-1 u-border-active-palette-2-base u-border-grey u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-body-color u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
+                <p class="u-align-center u-text u-text-5"> Immerse yourself in the art of Woodworking Workshops, where craftsmanship meets creativity.</p>
+                <a href="" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-align-center u-container-align-center-sm u-container-align-center-xl u-container-align-center-xs u-container-style u-list-item u-repeater-item u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-5">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="700" data-image-height="652" src="../images/young-rural-travellers-picnic3t.jpg">
-                <div class="u-align-center u-container-align-center u-container-style u-group u-palette-2-base u-group-3">
-                  <div class="u-container-layout u-valign-middle u-container-layout-6">
-                    <h4 class="u-align-center u-text u-text-default u-text-8">Glamping</h4>
-                    <p class="u-align-center u-text u-text-9">Exercitation ullamco</p>
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="853" data-image-height="1280" src="../images/9c40b82cfe0b1a977a73515b73d940a66d1198a18bae0d9048e752a80d5891e4c64da73dd3cf52cd71aa6d1e5ca84a92ecb9e61db5f736ef1e48d4_1280.jpg">
+                <div class="u-align-center u-container-style u-group u-palette-2-base u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <h4 class="u-text u-text-6">painting</h4>
                   </div>
                 </div>
-                  <a href="" class="u-align-center u-shading u-border-1 u-border-active-palette-2-base u-border-grey u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-body-color u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
+                <p class="u-align-center u-text u-text-7"> Channel your inner artist with our Painting Classes, designed for both beginners and seasoned painters.</p>
+                <a href="" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-image u-shading u-section-6" id="sec-018f" data-image-width="1620" data-image-height="1080">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
+    <section class="u-align-center u-clearfix u-container-align-center u-custom-color-3 u-section-6" id="sec-1452">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0"> Sports and Fitness</h2>
+        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"> Join tournaments, fitness classes, and outdoor adventures that will keep you moving, motivated, and having a blast.</p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="1280" data-image-height="853">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+                <div class="u-black u-container-align-center u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <h4 class="u-align-center u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Marathons</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="1280" data-image-height="1046">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <h4 class="u-align-center u-text u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">ice skating</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-image-width="1280" data-image-height="854">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-5">
+                <div class="u-black u-container-style u-expanded-width u-group u-opacity u-opacity-50 u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <h4 class="u-align-center u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">Cycling</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://nicepage.review" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-50 u-text-active-black u-text-hover-black u-white u-btn-1">GO TO CATEGORY</a>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-clearfix u-custom-color-1 u-footer" id="sec-b7f2"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded data-layout-selected u-align-left u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle u-container-layout-1">
-                  <h2 class="u-text u-text-1">Contact Us</h2>
-                  <p class="u-text u-text-body-alt-color u-text-2">Your Opinions Matter to us</p>
-                   <a href="#" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50 u-text-active-black u-text-hover-black u-btn-2">Contact Us</a>
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="../images/photo_2023-12-17_19-40-38.png" alt="" data-image-width="700" data-image-height="700">
+                  <h3 class="u-align-left u-text u-text-default u-text-1">EventFul</h3>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle u-container-layout-2">
-                  <div class="u-form u-form-1">
-                    <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
-                      <div class="u-form-email u-form-group u-form-partition-factor-2">
-                        <label for="email-319a" class="u-label u-text-body-alt-color u-label-1">Email</label>
-                        <input type="email" placeholder="Enter a valid email address" id="email-319a" name="email" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
-                      </div>
-                      <div class="u-form-group u-form-name u-form-partition-factor-2">
-                        <label for="name-319a" class="u-label u-text-body-alt-color u-label-2">Name</label>
-                        <input type="text" placeholder="Enter your Name" id="name-319a" name="name" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
-                      </div>
-                      <div class="u-form-address u-form-group u-form-group-3">
-                        <label for="address-452f" class="u-label u-text-body-alt-color u-label-3">Address</label>
-                        <input type="text" placeholder="Enter your address" id="address-452f" name="address" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
-                      </div>
-                      <div class="u-form-group u-form-message">
-                        <label for="message-319a" class="u-label u-text-body-alt-color u-label-4">Message</label>
-                        <textarea placeholder="Enter your message" rows="4" cols="50" id="message-319a" name="message" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required=""></textarea>
-                      </div>
-                      <div class="u-align-left u-form-group u-form-submit">
-                        <a href="#" class="u-active-white u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-white u-palette-2-base u-radius-50 u-btn-3">Submit</a>
-                        <input type="submit" value="submit" class="u-form-control-hidden">
-                      </div>
-                      <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                      <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                      <input type="hidden" value="" name="recaptchaResponse">
-                      <input type="hidden" name="formServices" value="c361f319-2ff5-40c3-d1dc-be2ae102ce94">
-                    </form>
-                  </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h6 class="u-text u-text-2">Contact us</h6>
+                  <p class="u-small-text u-text u-text-variant u-text-3">eventful@event.com</p>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
+                <div class="u-container-layout u-valign-top u-container-layout-3">
+                  <h6 class="u-text u-text-4">
+                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-1" data-href="https://nicepage.com">Request an event</a>
+                  </h6>
+                  <p class="u-small-text u-text u-text-variant u-text-5">
+                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-5 u-text-hover-white u-btn-2" data-href="https://nicepage.com">categories</a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    
-    
-    
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/templates" target="_blank">
-        <span>Template</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
-        <span>HTML Builder</span>
-      </a>. 
-    </section>
+      </div></footer>
 
+            
 
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
+        </form>
+
 </body>
 </html>

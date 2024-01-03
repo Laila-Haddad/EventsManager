@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
        <title>Register</title>
-    <link rel="stylesheet" href="../css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../css/nicepage1.css" media="screen">
 <link rel="stylesheet" href="../css/register.css" media="screen">
     <script class="u-script" type="../js/text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
 
@@ -19,7 +19,7 @@
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
-<body data-home-page="https://website6119221.nicepage.io/Page-1.html?version=5fc19fc6-a741-073c-d459-1e8e72b9f76f" data-home-page-title="Page 1" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+<body data-home-page-title="Page 1" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
     <section class="u-clearfix u-section-1" id="sec-e12a" style="background-color: #141414;">
       <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">

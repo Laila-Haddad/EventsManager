@@ -100,6 +100,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\nicepage1.css" />
+    <Content Include="css\nicepage2.css" />
     <Content Include="Global.asax" />
     <Content Include="pages\AdminFunctions\ModeratorsTable.aspx" />
     <Content Include="pages\AdminFunctions\AddRemoveAdminsAndModerators.aspx" />
@@ -107,6 +109,7 @@
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\UnauthorizedAccess.aspx" />
     <Content Include="pages\Home.aspx" />
+    <Content Include="pages\UserFunctions\RequestEvent.aspx" />
     <Content Include="pages\WebForm4.aspx" />
     <Content Include="pages\AdminPage.aspx" />
     <Content Include="Web.config" />
@@ -158,6 +161,13 @@
     <Compile Include="pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\UserFunctions\RequestEvent.aspx.cs">
+      <DependentUpon>RequestEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\UserFunctions\RequestEvent.aspx.designer.cs">
+      <DependentUpon>RequestEvent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\WebForm4.aspx.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -192,9 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="css\" />
     <Folder Include="js\" />
     <Folder Include="Models\" />
+    <Folder Include="pages\UserFunctions\upload\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

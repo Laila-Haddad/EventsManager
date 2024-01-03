@@ -10,7 +10,7 @@ Inherits="WebApplication5.pages.WebForm1" %>
     <meta name="keywords" content="Contact Us" />
     <meta name="description" content="" />
     <title>Log In</title>
-    <link rel="stylesheet" href="../css/nicepage.css" media="screen" />
+    <link rel="stylesheet" href="../css/nicepage2.css" media="screen" />
     <link rel="stylesheet" href="../css/login.css" media="screen" />
     <script
       class="u-script"
@@ -18,35 +18,21 @@ Inherits="WebApplication5.pages.WebForm1" %>
       src="../js/jquery-1.9.1.min.js"
       defer=""
     ></script>
-    <meta name="generator" content="Nicepage 6.1.8, nicepage.com" />
-    <meta name="referrer" content="origin" />
 
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "",
-        "url": "/"
-      }
-    </script>
-    <meta name="theme-color" content="#478ac9" />
-    <meta property="og:title" content="Page 7" />
-    <meta property="og:type" content="website" />
-    <link rel="canonical" href="/" />
-    <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+
+
+
   </head>
   <body
-    data-home-page="https://website6101897.nicepage.io/Page-7.html?version=320771b8-c1b3-9d5a-2eab-9c1fcaef8627"
-    data-home-page-title="Page 7"
-    data-path-to-root="./"
-    data-include-products="false"
+style="background-color:#141414"
+
     class="u-body u-xl-mode"
     data-lang="en"
   >
     <section class="u-clearfix u-section-1" id="sec-e78a">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div
-          class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
+          class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1" style="min-height: 640px;background-position: 49.78% 50%;background-image: url('../images/river.jpg');"
         >
           <div class="u-layout">
             <div class="u-layout-row">
@@ -93,6 +79,7 @@ Inherits="WebApplication5.pages.WebForm1" %>
                           class="u-transparent u-border-1 u-border-no-left u-border-no-right u-border-no-top u-border-gray u-input u-input-rectangle"
                           required=""
                             placeholder="Enter username"
+                            style="background-color:#141414"
                         ></asp:TextBox>
                       </div>
 
@@ -116,6 +103,8 @@ Inherits="WebApplication5.pages.WebForm1" %>
                           placeholder="enter your password"
                             required=""
                           runat="server"
+                            style="background-color:#141414"
+
                           class="u-transparent u-border-1 u-border-no-left u-border-no-right u-border-no-top u-border-gray u-input u-input-rectangle"
                         ></asp:TextBox>
                       </div>
