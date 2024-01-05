@@ -102,6 +102,10 @@
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
+  #menu-toggle:checked ~ .menu li#img {
+    height:100px;
+  }
   .menu > li {
     display: flex;
     justify-content: center;
@@ -119,7 +123,7 @@
 </head>
 
     <body style="background-color:#141414" class="u-body u-xl-mode" data-lang="en">
-        <form id="form1" runat="server">
+        <form id="form" runat="server">
    <header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-e1a4 u-header" id="sec-c67f"><div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="../images/photo_2023-12-17_19-40-38.png" alt="" data-image-width="700" data-image-height="700">
         <h3 class="u-align-left u-text u-text-default u-text-1">EventFul</h3>
@@ -130,7 +134,7 @@
             <div class="u-layout-row">
               <div class="u-align-right u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
                 <div class="u-container-layout u-valign-middle u-container-layout-1">
-                 
+                    
                   
                     <asp:HyperLink ID="login" NavigateUrl="~/pages/Login.aspx" runat="server" class="u-border-2 u-border-custom-color-2 u-btn u-btn-round u-button-style u-custom-color-2 u-radius-50 u-btn-1">Login</asp:HyperLink>
                 </div>
@@ -151,12 +155,16 @@
     <div class='menu-button'></div>
   </label>
     <ul class="menu" style="width: 150px;">
+        <li id="img">
+            <asp:Image ID="image" runat="server" ImageUrl="" Width="100px" Height="100px"/></li>
       <li> <asp:Label ID="uname" runat="server" Text="Hello "></asp:Label></li>
       <li><a href="Home.aspx">Home</a></li>
+      <li><a href="../UserFunctions/CategoryPage.aspx">Events</a></li>
+
       <li><a href="">Booked events</a></li>
       <li><a href="UserFunctions/RequestEvent.aspx">Request event</a></li>
       <li>
-          <asp:Button ID="logout" runat="server" OnClick="logout_Click" Text="log Out" style="border:none; background-color:transparent; color:indianred; cursor:pointer" />
+          <asp:Button ID="logout" runat="server" OnClick="logout_Click" Text="log Out" style="border:none; background-color:transparent; color:red; cursor:pointer" />
           </li>
 
     </ul>
@@ -181,26 +189,47 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="custom-expanded u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
+           
+               <asp:HyperLink ID="HyperLink4" NavigateUrl="UserFunctions/CategoryPage.aspx?cat=concert" runat="server">
+              
+              <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
               <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-1"><img src="../images/1941070-27c0c530.png" alt=""></span>
                 <h4 class="u-align-center u-custom-font u-text u-text-font u-text-1">concerts &amp; performences</h4>
               </div>
             </div>
+
+            </asp:HyperLink>
+
+
+               <asp:HyperLink ID="HyperLink3" NavigateUrl="UserFunctions/CategoryPage.aspx?cat=camp" runat="server">
+
             <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
               <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-2"><img src="../images/7401471-4294aa1a.png" alt=""></span>
                 <h4 class="u-align-center u-custom-font u-text u-text-font u-text-2">Camping &amp; outdoors</h4>
               </div>
             </div>
+
+             </asp:HyperLink>
+
+
+               <asp:HyperLink ID="HyperLink1" NavigateUrl="UserFunctions/CategoryPage.aspx?cat=sport" runat="server">
             <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
               <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-3"><img src="../images/7598570-f334a584.png" alt=""></span>
-                <h4 class="u-align-center u-text u-text-3">sports &amp; fitness</h4>
-              </div>
+                 <h4 class="u-align-center u-text u-text-3">sports &amp; fitness</h4>
+                      </div>
             </div>
+             </asp:HyperLink>
+
+               <asp:HyperLink ID="HyperLink2" NavigateUrl="UserFunctions/CategoryPage.aspx?cat=art" runat="server">
+
             <div class="u-align-center u-container-style u-custom-color-3 u-list-item u-repeater-item u-shape-rectangle u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
               <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-align-center u-file-icon u-icon u-text-white u-icon-4"><img src="../images/1756784-328473b4.png" alt=""></span>
                 <h4 class="u-align-center u-custom-font u-text u-text-font u-text-4"> art &amp; workshops</h4>
               </div>
             </div>
+             </asp:HyperLink>
+
+
           </div>
         </div>
       </div>
@@ -240,7 +269,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="u-align-center u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1">Go to category</a>
+        <a href="UserFunctions/GategoryPage.aspx?cat=concert" class="u-align-center u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1">Go to category</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-custom-color-2 u-section-4" id="sec-185a">
@@ -296,7 +325,7 @@
             </div>
           </div>
         </div>
-        <a href="https://nicepage.review" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-50 u-text-active-black u-text-hover-black u-white u-btn-1">GO TO CATEGORY</a>
+        <a href="UserFunctions/GategoryPage.aspx?cat=camp" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-50 u-text-active-black u-text-hover-black u-white u-btn-1">GO TO CATEGORY</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-container-align-center u-custom-color-1 u-section-5" id="sec-d633">
@@ -313,7 +342,7 @@
                   </div>
                 </div>
                 <p class="u-align-center u-text u-text-3"> Join our Knitting Gatherings to discover the joy of creating beautiful, handcrafted textiles.&nbsp;</p>
-                <a href="" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-1">learn more</a>
+                <a href="UserFunctions/GategoryPage.aspx?cat=art" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-1">learn more</a>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
@@ -325,10 +354,13 @@
                   </div>
                 </div>
                 <p class="u-align-center u-text u-text-5"> Immerse yourself in the art of Woodworking Workshops, where craftsmanship meets creativity.</p>
-                <a href="" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
+                <a href="UserFunctions/GategoryPage.aspx?cat=art" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center-sm u-container-align-center-xl u-container-align-center-xs u-container-style u-list-item u-repeater-item u-list-item-3">
+           
+              
+              
+              <div class="u-align-center u-container-align-center-sm u-container-align-center-xl u-container-align-center-xs u-container-style u-list-item u-repeater-item u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-5">
                 <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="853" data-image-height="1280" src="../images/9c40b82cfe0b1a977a73515b73d940a66d1198a18bae0d9048e752a80d5891e4c64da73dd3cf52cd71aa6d1e5ca84a92ecb9e61db5f736ef1e48d4_1280.jpg">
                 <div class="u-align-center u-container-style u-group u-palette-2-base u-group-3">
@@ -337,7 +369,7 @@
                   </div>
                 </div>
                 <p class="u-align-center u-text u-text-7"> Channel your inner artist with our Painting Classes, designed for both beginners and seasoned painters.</p>
-                <a href="" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
+                <a href="UserFunctions/GategoryPage.aspx?cat=art" class="u-align-center u-border-1 u-border-active-palette-2-base u-border-grey-5 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-grey-5 u-text-hover-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
               </div>
             </div>
           </div>
@@ -397,7 +429,7 @@
             </div>
           </div>
         </div>
-        <a href="https://nicepage.review" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-50 u-text-active-black u-text-hover-black u-white u-btn-1">GO TO CATEGORY</a>
+        <a href="UserFunctions/GategoryPage.aspx?cat=sport" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-50 u-text-active-black u-text-hover-black u-white u-btn-1">GO TO CATEGORY</a>
       </div>
     </section>
     

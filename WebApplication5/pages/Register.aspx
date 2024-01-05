@@ -40,7 +40,7 @@
                     <form runat="server" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px" id="form1" runat="server">
                       
                         
-                        <div class="u-form-group u-form-name u-form-partition-factor-2">
+                        <div class="u-form-group u-form-name ">
                         <label for="name-319a" class="u-label u-text-body-alt-color u-label-1">Username</label>
 
                            <asp:TextBox name="name" placeholder="Enter your username" ID="userName" runat="server" OnTextChanged="userName_TextChanged"  class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" style="background-color: #141414;" required=""></asp:TextBox>
@@ -52,6 +52,11 @@
                            <asp:TextBox  placeholder="e.g. +14155552675"  type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ID="phone" runat="server"  class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" style="background-color: #141414;" required="" TextMode="Phone"></asp:TextBox>
                       </div>
 
+                      <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-2">
+                        <label for="file" class="u-label u-text-body-alt-color u-label-2">Profile Picture</label>
+                        <asp:FileUpload  ID="file" Style="margin: auto; border: none; cursor: pointer;background-color: #141414;" accept="image/*" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" runat="server" required="" /> 
+                 
+                      </div>
 
                       <div class="u-form-email u-form-group">
                         <label for="email" class="u-label u-text-body-alt-color u-label-3">Email</label>

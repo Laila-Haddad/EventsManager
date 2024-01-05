@@ -42,11 +42,15 @@ namespace WebApplication5.pages.UserFunctions
 
             //handle image upload
             string fn = System.IO.Path.GetFileName(FileUpload1.PostedFile.FileName);
-            string SaveLocation = Server.MapPath("upload") + "\\" + fn;
+
+            string SaveLocation = "upload/" + fn;
+
+            string rootedPath = Server.MapPath(SaveLocation);
+           
             image = SaveLocation;
             try
             {
-                FileUpload1.PostedFile.SaveAs(SaveLocation);
+                FileUpload1.PostedFile.SaveAs(rootedPath);
             }
 
             catch (Exception ex)

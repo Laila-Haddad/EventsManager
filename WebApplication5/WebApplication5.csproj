@@ -100,6 +100,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\category1.css" />
     <Content Include="css\nicepage1.css" />
     <Content Include="css\nicepage2.css" />
     <Content Include="Global.asax" />
@@ -110,6 +111,7 @@
     <Content Include="pages\UnauthorizedAccess.aspx" />
     <Content Include="pages\Home.aspx" />
     <Content Include="pages\UserFunctions\RequestEvent.aspx" />
+    <Content Include="pages\UserFunctions\CategoryPage.aspx" />
     <Content Include="pages\WebForm4.aspx" />
     <Content Include="pages\AdminPage.aspx" />
     <Content Include="Web.config" />
@@ -167,6 +169,13 @@
     </Compile>
     <Compile Include="pages\UserFunctions\RequestEvent.aspx.designer.cs">
       <DependentUpon>RequestEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\UserFunctions\CategoryPage.aspx.cs">
+      <DependentUpon>CategoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\UserFunctions\CategoryPage.aspx.designer.cs">
+      <DependentUpon>CategoryPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\WebForm4.aspx.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>

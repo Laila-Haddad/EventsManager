@@ -46,12 +46,14 @@ namespace WebApplication5
                 }
             }
         }
-        private void AddUser(string username, string password, string email, string phoneNumber) {
+        private void AddUser(string username, string password, string email, string phoneNumber, string image) {
+           
+            
             // Your connection string key from web.config
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
 
             // SQL query to insert a new user into the Users table
-            string insertQuery = "INSERT INTO Users (username, password,email,phoneNumber) VALUES (@Username, @Password,@Email,@phoneNumber)";
+            string insertQuery = "INSERT INTO Users (username, password,email,phoneNumber,image) VALUES (@Username, @Password,@Email,@phoneNumber, @image)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -62,6 +64,8 @@ namespace WebApplication5
                     command.Parameters.AddWithValue("@Password", password);
                     command.Parameters.AddWithValue("@Email", email);
                     command.Parameters.AddWithValue("@phoneNumber", phoneNumber);
+                    command.Parameters.AddWithValue("@image", image);
+
 
 
                     connection.Open();
@@ -84,23 +88,36 @@ namespace WebApplication5
             string eml = email.Text;
             string phon =phone.Text ;
 
+            //handle image upload
+            string fn = System.IO.Path.GetFileName(file.PostedFile.FileName);
+            string image = "UserFunctions/upload/" + fn;
+
+            string rootedPath = Server.MapPath(image);
+
+            try
+            {
+                file.PostedFile.SaveAs(rootedPath);
+            }
+
+            catch (Exception ex)
+            {
+                //file.Text = "Error: " + ex.Message;
+            }
+
             if (!VerifyEmailExistsOnce(eml, uname))
             {
-                AddUser(uname, pass, eml, phon);
+                AddUser(uname, pass, eml, phon, image);
 
-                Response.Redirect("~/pages/Home.aspx");
                 Session["UserRole"] = "User";
                 Session["Username"] = uname;
+                Response.Redirect("~/pages/Home.aspx");
+                
 
             }
             else
             {
                 Label2.Text = "User already exists";
             }
-       
-
-            
-
 
         }
 

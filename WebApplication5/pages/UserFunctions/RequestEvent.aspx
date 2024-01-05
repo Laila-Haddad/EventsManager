@@ -144,7 +144,7 @@
 <body style="background-color: #141414">
 
 
-    <header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-e1a4 u-header" id="sec-c67f">
+    <header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-e1a4 u-header" style="padding-left:60px" id="sec-c67f">
         <div class="u-clearfix u-sheet u-sheet-1">
             <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="../../images/photo_2023-12-17_19-40-38.png" alt="" data-image-width="700" data-image-height="700">
             <h3 class="u-align-left u-text u-text-default u-text-1">EventFul</h3>
@@ -153,7 +153,7 @@
             <div class="data-layout-selected u-clearfix u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
                 <div class="u-layout">
                     <div class="u-layout-row">
-                        <div class="u-align-right u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                        <div class="u-align-right u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
 
 
 
