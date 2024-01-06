@@ -13,7 +13,6 @@ namespace WebApplication5.pages
         {
             //if the user isnt logged in their session is null
             if (Session["UserRole"] == null)
-
             {
                 //show the login and register buttons, and hide the user personal menu
                 login.Style["display"] = "block";

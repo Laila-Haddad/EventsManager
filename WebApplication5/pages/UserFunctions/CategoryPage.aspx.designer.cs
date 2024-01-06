@@ -78,6 +78,24 @@ namespace WebApplication5.pages.UserFunctions
         protected global::System.Web.UI.WebControls.Label title;
 
         /// <summary>
+        /// download control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button download;
+
+        /// <summary>
+        /// lblMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
+
+        /// <summary>
         /// DataList1 control.
         /// </summary>
         /// <remarks>
