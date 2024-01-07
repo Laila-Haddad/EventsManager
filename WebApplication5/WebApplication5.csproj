@@ -110,6 +110,7 @@
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\UnauthorizedAccess.aspx" />
     <Content Include="pages\Home.aspx" />
+    <Content Include="pages\UserFunctions\BookedEvents.aspx" />
     <Content Include="pages\UserFunctions\RequestEvent.aspx" />
     <Content Include="pages\UserFunctions\CategoryPage.aspx" />
     <Content Include="pages\WebForm4.aspx" />
@@ -162,6 +163,13 @@
     </Compile>
     <Compile Include="pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\UserFunctions\BookedEvents.aspx.cs">
+      <DependentUpon>BookedEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\UserFunctions\BookedEvents.aspx.designer.cs">
+      <DependentUpon>BookedEvents.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\UserFunctions\RequestEvent.aspx.cs">
       <DependentUpon>RequestEvent.aspx</DependentUpon>

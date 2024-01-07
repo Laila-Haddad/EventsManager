@@ -158,10 +158,10 @@
         <li id="img">
             <asp:Image ID="image" runat="server" ImageUrl="" Width="100px" Height="100px"/></li>
       <li> <asp:Label ID="uname" runat="server" Text="Hello "></asp:Label></li>
-      <li><a href="Home.aspx">Home</a></li>
-      <li><a href="../UserFunctions/CategoryPage.aspx">Events</a></li>
+      <li><a href="~Home.aspx">Home</a></li>
+      <li><a href="UserFunctions/CategoryPage.aspx">Events</a></li>
 
-      <li><a href="">Booked events</a></li>
+      <li><a href="UserFunctions/BookedEvents.aspx">Booked events</a></li>
       <li><a href="UserFunctions/RequestEvent.aspx">Request event</a></li>
       <li>
           <asp:Button ID="logout" runat="server" OnClick="logout_Click" Text="log Out" style="border:none; background-color:transparent; color:red; cursor:pointer" />

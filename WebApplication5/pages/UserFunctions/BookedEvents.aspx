@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CategoryPage.aspx.cs" Inherits="WebApplication5.pages.UserFunctions.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BookedEvents.aspx.cs" Inherits="WebApplication5.pages.UserFunctions.WebForm3" %>
 
 <!DOCTYPE html>
 
@@ -189,16 +189,10 @@
       id="sec-1e4a"
     >
       <div class="u-clearfix u-sheet u-sheet-1">
-          <asp:Label ID="title" runat="server" Text="Events Near You" class="u-align-center u-text u-text-white u-text-1"></asp:Label>
+          <asp:Label ID="title" runat="server" Text="Your booked events" class="u-align-center u-text u-text-white u-text-1"></asp:Label>
           <br />
 
-          <asp:Button  class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-4-light-3 u-radius u-white u-btn-1"
-                 ID="download" runat="server" Text="Download Events info" OnClick="download_Click" />
-
           <br />
-
-
-          <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
 
 
           <asp:DataList ID="DataList1" runat="server" DataKeyField="EventID" DataSourceID="SqlDataSource1" CellSpacing="5" RepeatColumns="3" OnItemCommand="DataList1_ItemCommand" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
@@ -238,14 +232,8 @@
                     ><img src="../../images/686648.png" alt="" /></span
                   >&nbsp; Seats :&nbsp;<asp:Label  ID="NumSeatsLabel" runat="server" Text='<%# Eval("NumSeats") %>' /><br />
                 </p>
-              
-                  <asp:Button  class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-4-light-3 u-radius u-white u-btn-1"
-                 runat="server" EnableViewState="true" CommandName="book" CommandArgument='<%# Eval("EventID") %>' Text="Book now!" />
 
-                  
-
-
-          
+       
           </div>
         </div>
        

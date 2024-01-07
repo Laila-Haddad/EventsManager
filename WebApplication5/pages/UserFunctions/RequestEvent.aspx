@@ -169,8 +169,8 @@
                                         <ul class="menu" style="width: 150px;">
                                             <li>
                                                 <asp:Label ID="uname" runat="server" Text="Hello "></asp:Label></li>
-                                            <li><a href="Home.aspx">Home</a></li>
-                                            <li><a href="">Booked events</a></li>
+                                            <li><a href="../Home.aspx">Home</a></li>
+                                            <li><a href="UserFunctions/CategoryPage.aspx">Booked events</a></li>
                                             <li><a href="UserFunctions/RequestEvent.aspx">Request event</a></li>
 
 

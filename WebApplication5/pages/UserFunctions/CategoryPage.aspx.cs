@@ -12,41 +12,44 @@ namespace WebApplication5.pages.UserFunctions
     public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+            
         {
-            //fetch events from database and write them on a txt file
-            WriteEventsOnFile();
-
-
-            //get the category name parameter from the url to display the events related to the category
-            string category = Request.QueryString["cat"];
-            DisplayCategory(category);
-
-
-
-            //if the user isnt logged in their session is null
-            if (Session["UserRole"] == null)
-
+            if (!Page.IsPostBack)
             {
-                //show the login and register buttons, and hide the user personal menu
-                login.Style["display"] = "block";
-                register.Style["display"] = "block";
-                userMenu.Style["display"] = "none";
-               
 
+                //fetch events from database and write them on a txt file
+                WriteEventsOnFile();
+
+
+                //get the category name parameter from the url to display the events related to the category
+                string category = Request.QueryString["cat"];
+                DisplayCategory(category);
+
+
+
+                //if the user isnt logged in their session is null
+                if (Session["UserRole"] == null)
+
+                {
+                    //show the login and register buttons, and hide the user personal menu
+                    login.Style["display"] = "block";
+                    register.Style["display"] = "block";
+
+                }
+                else
+                {
+                    //stringfy the user name from their session to include it in the personal menu
+                    string username = (string)Session["Username"];
+
+                    login.Style["display"] = "none";
+                    register.Style["display"] = "none";
+
+                    uname.Text += " " + username + "!";
+                    image.ImageUrl = getImage(username);
+
+                }
             }
-            else
-            {
-                //stringfy the user name from their session to include it in the personal menu
-                string username = (string)Session["Username"];
-
-                login.Style["display"] = "none";
-                register.Style["display"] = "none";
-                userMenu.Style["display"] = "block";
-
-                uname.Text += " " + username + "!";
-                image.ImageUrl = getImage(username);
-
-            }
+           
 
 
 
@@ -255,7 +258,7 @@ namespace WebApplication5.pages.UserFunctions
             catch (Exception ex)
             {
 
-                ShowMessage("An error occurred while booking. Please try again later.");
+                lblMessage.Text = "An error occurred while booking. Please try again later.";
                 Console.WriteLine("Exception: " + ex.Message);
             }
             
@@ -287,28 +290,25 @@ namespace WebApplication5.pages.UserFunctions
 
                         if (rowsAffected > 0)
                         {
-                            ShowMessage("Booking successful!");
+                            lblMessage.Text = "Booking successful!";
+                            userMenu.Style["display"] = "block";
+                            
+
                         }
                         else
                         {
-                            ShowMessage("Booking failed. Please try again.");
+                            lblMessage.Text = "Booking failed. Please try again.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                ShowMessage("An error occurred while booking. Please try again later.");
+                Response.Redirect("../Login.aspx");
+                lblMessage.Text = "An error occurred while booking. Please try again later.";
                 Console.WriteLine("Exception: " + ex.Message);
             }
         }
-
-        private void ShowMessage(string message)
-        {
-            lblMessage.Text = message;
-        }
-
-
 
     }
 
