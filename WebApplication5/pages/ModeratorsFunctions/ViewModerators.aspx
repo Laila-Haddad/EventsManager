@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ModeratorPage.aspx.cs" Inherits="WebApplication5.pages.ModeratorPage" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewModerators.aspx.cs" Inherits="WebApplication5.pages.ModeratorsFunctions.ViewModerators" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -7,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Moderator</title>
+    <title>View Moderators</title>
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -107,23 +106,17 @@
                         <p class="card-description">
                             Current Requests:
 
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="RequestID" DataSourceID="SqlDataSource2" class="table">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1" class="table">
                         <Columns>
-                            <asp:BoundField DataField="RequestID" HeaderText="RequestID" ReadOnly="True" SortExpression="RequestID" />
-                            <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
-                            <asp:BoundField DataField="EventName" HeaderText="EventName" SortExpression="EventName" />
-                            <asp:BoundField DataField="Time" HeaderText="Time" SortExpression="Time" />
-                            <asp:BoundField DataField="Location" HeaderText="Location" SortExpression="Location" />
-                            <asp:BoundField DataField="Activities" HeaderText="Activities" SortExpression="Activities" />
-                            <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
-                            <asp:BoundField DataField="NumSeats" HeaderText="NumSeats" SortExpression="NumSeats" />
-                            <asp:BoundField DataField="IndoorOutdoor" HeaderText="IndoorOutdoor" SortExpression="IndoorOutdoor" />
+                            <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" ReadOnly="True" />
+                            <asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />
                         </Columns>
                     </asp:GridView>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString4 %>" SelectCommand="SELECT [email], [username] FROM [Moderators]"></asp:SqlDataSource>
                     </p>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString4 %>" SelectCommand="SELECT * FROM [EventRequests]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString4 %>" SelectCommand="SELECT [Username], [email], [id] FROM [Users]"></asp:SqlDataSource>
 
 
                 </div>
@@ -176,60 +169,6 @@
 
 
                     <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Reject Request</h4>
-
-                            <div class="form-group">
-                                &nbsp;<label for="exampleInputUsername1">Request ID:</label>
-                                <asp:TextBox runat="server" class="form-control" ID="exampleInputRequestID1" OnTextChanged="exampleInputUsername1_TextChanged"></asp:TextBox>
-
-
-                            </div>
-                            <div class="form-group">
-                                &nbsp;<label for="exampleInputUserID1">User ID:</label>
-                                <asp:TextBox runat="server" class="form-control" ID="exampleInputUserID1" OnTextChanged="exampleInputUsername1_TextChanged"></asp:TextBox>
-
-
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Report:</label>
-                                <asp:TextBox runat="server"  class="form-control" ID="exampleInputReport1" OnTextChanged="exampleInputEmail1_TextChanged"></asp:TextBox>
-
-
-                            </div>
-
-
-                            <asp:Button runat="server" OnClick="addbtn_Click" Text="Confirm" class="btn btn-gradient-primary me-2" ID="Button1" />
-
-
-
-                            <asp:Label ID="dataEntry" runat="server"></asp:Label>
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Accept Request:</h4>
-
-
-
-                            <div class="form-group">
-                                Request ID:
-                                <asp:TextBox runat="server" class="form-control" ID="TextBox2" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
-                            </div>
-
-
-                            <asp:Button runat="server" OnClick="removebtn_Click" Text="Confirm" class="btn btn-gradient-primary me-2" ID="Button2" />
-
-
-
-                            <br />
-                            <br />
-                            &nbsp;&nbsp;&nbsp;
-
-                             <asp:Label ID="Label1" runat="server"></asp:Label>
-
-                        </div>
                     </div>
 
 
