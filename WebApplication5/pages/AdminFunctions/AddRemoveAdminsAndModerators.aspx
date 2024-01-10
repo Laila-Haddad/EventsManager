@@ -34,11 +34,11 @@
 
         <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand brand-logo" href="index.html">
-                        <img src="assets/images/logo.svg" alt="logo" /></a>
-                    <a class="navbar-brand brand-logo-mini" href="index.html">
-                        <img src="assets/images/logo-mini.svg" alt="logo" /></a>
+                    <a class="navbar-brand brand-logo" href="index.html" style="width: 23%;"> Eventful </a>
+                        <img src="..\..\images\photo_2023-12-17_19-40-38.png" alt="logo" style="max-width: 131%;height: 54px; margin-left: 27px;"/></a>
+                 
                 </div>
+             
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                         <span class="mdi mdi-menu"></span>
@@ -150,7 +150,7 @@
 
 
 
-                            <asp:DropDownList ID="role" runat="server">
+                            <asp:DropDownList ID="role" runat="server" style =" border: #fff;">
                                 <asp:ListItem Selected="True">Admin</asp:ListItem>
                                 <asp:ListItem>Moderator</asp:ListItem>
                             </asp:DropDownList>
@@ -180,7 +180,7 @@
 
 
 
-                            <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:DropDownList ID="DropDownList1" runat="server" style="border: #fff;">
                                 <asp:ListItem Selected="True">Admin</asp:ListItem>
                                 <asp:ListItem>Moderator</asp:ListItem>
                             </asp:DropDownList>

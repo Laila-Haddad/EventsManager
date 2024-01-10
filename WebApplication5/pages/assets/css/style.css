@@ -12551,8 +12551,7 @@ code {
 
 /* gradient buttons */
 .btn-gradient-primary {
-  background: -webkit-gradient(linear, left top, right top, from(#da8cff), to(#9a55ff));
-  background: linear-gradient(to right, #da8cff, #9a55ff);
+  background: linear-gradient(to right, #d7b15b91, #bca36b);
   border: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
@@ -14191,10 +14190,10 @@ dl {
       .sidebar .nav .nav-item.active {
         background: #ffffff; }
         .sidebar .nav .nav-item.active > .nav-link .menu-title {
-          color: #b66dff;
+          color: #bca36b;
           font-family: "ubuntu-medium", sans-serif; }
         .sidebar .nav .nav-item.active > .nav-link i {
-          color: #b66dff; }
+          color: #bca36b; }
       .sidebar .nav .nav-item:hover {
         background: #fcfcfc; }
       .sidebar .nav .nav-item.nav-profile .nav-link {

@@ -12,7 +12,8 @@
     <title>Purple Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+   <%-- <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">--%>
+    
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -30,12 +31,12 @@
         <div class="container-scroller">
             <!-- partial:../../partials/_navbar.html -->
             <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand brand-logo" href="index.html">
-                        <img src="assets/images/logo.svg" alt="logo" /></a>
-                    <a class="navbar-brand brand-logo-mini" href="index.html">
-                        <img src="assets/images/logo-mini.svg" alt="logo" /></a>
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="index.html" style="width: 23%;"> Eventful </a>
+                        <img src="..\..\images\photo_2023-12-17_19-40-38.png" alt="logo" style="max-width: 131%;height: 54px; margin-left: 27px;"/></a>
+                 
                 </div>
+             
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                         <span class="mdi mdi-menu"></span>
@@ -121,9 +122,9 @@
 
 
                 <div style="width: 50%; align-content: center; margin: auto; margin-top: 38px;">
-                    <p class="card-description">
+                    <h4 class="card-description">
                         Reports 
-                    </p>
+                    </h4>
 
                     <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2" class="table">
                         <Columns>
@@ -132,6 +133,9 @@
                             <asp:BoundField DataField="reason" HeaderText="reason" SortExpression="reason" />
                             <asp:BoundField DataField="status" HeaderText="status" SortExpression="status" />
                         </Columns>
+                         <HeaderStyle BackColor="#DEC987" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Font-Names="sans-serif" Font-Size="Medium" HorizontalAlign="Center" VerticalAlign="Middle" />
+                        <RowStyle BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+                    
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT * FROM [Reports]" OnSelecting="SqlDataSource2_Selecting"></asp:SqlDataSource>
 

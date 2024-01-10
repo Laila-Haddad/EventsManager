@@ -7,11 +7,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Admin</title>
-    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <title>Admin</title>
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+       <link rel="stylesheet" href="assets/css/style.css">
+       <link rel="shortcut icon" href="assets/images/favicon.ico" />
 </head>
 <body>
     <form runat="server">
@@ -21,11 +21,11 @@
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand brand-logo" href="index.html">
-                        <img src="assets/images/logo.svg" alt="logo" /></a>
-                    <a class="navbar-brand brand-logo-mini" href="index.html">
-                        <img src="assets/images/logo-mini.svg" alt="logo" /></a>
+                    <a class="navbar-brand brand-logo" href="index.html" style="width: 23%;"> Eventful </a>
+                        <img src="..\images\photo_2023-12-17_19-40-38.png" alt="logo" style="max-width: 131%;height: 54px; margin-left: 27px;"/></a>
+                 
                 </div>
+             
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                         <span class="mdi mdi-menu"></span>
@@ -72,7 +72,7 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="AdminPage1.aspx">
+                            <a class="nav-link" href="AdminPage.aspx">
                                 <span class="menu-title">Admins</span>
                                 <i class="mdi mdi-table-large menu-icon"></i>
                             </a>
@@ -110,15 +110,17 @@
 
                 <div style="width: 50%; align-content: center; margin: auto; margin-top: 38px;">
 
-                    <p class="card-description">
+                    <h4 class="card-description">
                         Admins 
-                    </p>
+                    </h4>
 
                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1" class="table">
                         <Columns>
                             <asp:BoundField DataField="email" HeaderText="email" ReadOnly="True" SortExpression="email" />
                             <asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />
                         </Columns>
+                        <HeaderStyle BackColor="#DEC987" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Font-Names="sans-serif" Font-Size="Medium" HorizontalAlign="Center" VerticalAlign="Middle" />
+                        <RowStyle BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT [email], [username] FROM [Admins]"></asp:SqlDataSource>
 

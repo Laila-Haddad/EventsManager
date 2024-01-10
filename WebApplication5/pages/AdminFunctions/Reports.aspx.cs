@@ -31,13 +31,13 @@ namespace WebApplication5.pages.AdminFunctions
 
             string deleteQueryfromUsers, deleteQueryfromReports;
 
-            // Assuming "userId" is the TextBox containing the user ID
+          
             string uId = userId.Text;
 
-            // Check if the user ID is a valid integer
+            
             if (int.TryParse(uId, out int userIdValue))
             {
-                // SQL query to delete a user with a specific ID from the Moderators table
+                
                 deleteQueryfromUsers = "DELETE FROM Users WHERE id = @id";
                 deleteQueryfromReports = "DELETE FROM Reports WHERE reportedUserId = @id";
 

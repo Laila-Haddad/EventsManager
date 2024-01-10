@@ -127,20 +127,20 @@ namespace WebApplication5.pages.AdminFunctions
 
         private void AddUser(string username, string password, string email, string role)
         {
-            // Your connection string key from web.config
+           
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
 
             string insertQuery;
 
             if (role == "Admin")
             {
-                // SQL query to insert a new user into the Users table
+            
                 insertQuery = "INSERT INTO Admins (username, password,email) VALUES (@Username, @Password,@Email)";
 
             }
             else
             {
-                // SQL query to insert a new user into the Users table
+                
                 insertQuery = "INSERT INTO Moderators (username, password,email) VALUES (@Username, @Password,@Email)";
 
             }
@@ -149,14 +149,13 @@ namespace WebApplication5.pages.AdminFunctions
             {
                 using (SqlCommand command = new SqlCommand(insertQuery, connection))
                 {
-                    // Use parameters to prevent SQL injection
+                   
                     command.Parameters.AddWithValue("@Username", username);
                     command.Parameters.AddWithValue("@Password", password);
                     command.Parameters.AddWithValue("@Email", email);
 
                     connection.Open();
 
-                    // Execute the insert query
                     command.ExecuteNonQuery();
                 }
             }
