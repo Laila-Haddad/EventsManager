@@ -24,7 +24,7 @@ namespace WebApplication5.pages
             string role = DropDownList1.SelectedValue;
 
             //open connetion
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString4"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
             conn.Open();
 
             //build query depending on dropdown list role choice
