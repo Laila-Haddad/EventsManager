@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
        <title>Register</title>
-    <link rel="stylesheet" href="../css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../css/nicepage1.css" media="screen">
 <link rel="stylesheet" href="../css/register.css" media="screen">
     <script class="u-script" type="../js/text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
 
@@ -19,7 +19,7 @@
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
-<body data-home-page="https://website6119221.nicepage.io/Page-1.html?version=5fc19fc6-a741-073c-d459-1e8e72b9f76f" data-home-page-title="Page 1" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+<body data-home-page-title="Page 1" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
     <section class="u-clearfix u-section-1" id="sec-e12a" style="background-color: #141414;">
       <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
@@ -40,7 +40,7 @@
                     <form runat="server" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px" id="form1" runat="server">
                       
                         
-                        <div class="u-form-group u-form-name u-form-partition-factor-2">
+                        <div class="u-form-group u-form-name ">
                         <label for="name-319a" class="u-label u-text-body-alt-color u-label-1">Username</label>
 
                            <asp:TextBox name="name" placeholder="Enter your username" ID="userName" runat="server" OnTextChanged="userName_TextChanged"  class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" style="background-color: #141414;" required=""></asp:TextBox>
@@ -52,6 +52,11 @@
                            <asp:TextBox  placeholder="e.g. +14155552675"  type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ID="phone" runat="server"  class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" style="background-color: #141414;" required="" TextMode="Phone"></asp:TextBox>
                       </div>
 
+                      <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-2">
+                        <label for="file" class="u-label u-text-body-alt-color u-label-2">Profile Picture</label>
+                        <asp:FileUpload  ID="file" Style="margin: auto; border: none; cursor: pointer;background-color: #141414;" accept="image/*" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" runat="server" required="" /> 
+                 
+                      </div>
 
                       <div class="u-form-email u-form-group">
                         <label for="email" class="u-label u-text-body-alt-color u-label-3">Email</label>

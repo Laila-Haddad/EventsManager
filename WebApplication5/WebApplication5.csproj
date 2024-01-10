@@ -100,13 +100,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\category1.css" />
+    <Content Include="css\nicepage1.css" />
+    <Content Include="css\nicepage2.css" />
     <Content Include="Global.asax" />
     <Content Include="pages\AdminFunctions\ModeratorsTable.aspx" />
     <Content Include="pages\AdminFunctions\AddRemoveAdminsAndModerators.aspx" />
     <Content Include="pages\AdminFunctions\Reports.aspx" />
     <Content Include="pages\Login.aspx" />
+    <Content Include="pages\ModeratorPage.aspx" />
     <Content Include="pages\UnauthorizedAccess.aspx" />
     <Content Include="pages\Home.aspx" />
+    <Content Include="pages\UserFunctions\BookedEvents.aspx" />
+    <Content Include="pages\UserFunctions\RequestEvent.aspx" />
+    <Content Include="pages\UserFunctions\CategoryPage.aspx" />
+    <Content Include="pages\ModeratorFunctions\ViewModerators.aspx" />
+    <Content Include="pages\ModeratorFunctions\ViewReports.aspx" />
+    <Content Include="pages\ModeratorFunctions\ViewUsers.aspx" />
     <Content Include="pages\WebForm4.aspx" />
     <Content Include="pages\AdminPage.aspx" />
     <Content Include="Web.config" />
@@ -144,6 +154,13 @@
     <Compile Include="pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\ModeratorPage.aspx.cs">
+      <DependentUpon>ModeratorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ModeratorPage.aspx.designer.cs">
+      <DependentUpon>ModeratorPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\UnauthorizedAccess.aspx.cs">
       <DependentUpon>UnauthorizedAccess.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,6 +174,48 @@
     </Compile>
     <Compile Include="pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\UserFunctions\BookedEvents.aspx.cs">
+      <DependentUpon>BookedEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\UserFunctions\BookedEvents.aspx.designer.cs">
+      <DependentUpon>BookedEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\UserFunctions\RequestEvent.aspx.cs">
+      <DependentUpon>RequestEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\UserFunctions\RequestEvent.aspx.designer.cs">
+      <DependentUpon>RequestEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\UserFunctions\CategoryPage.aspx.cs">
+      <DependentUpon>CategoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\UserFunctions\CategoryPage.aspx.designer.cs">
+      <DependentUpon>CategoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ModeratorFunctions\ViewModerators.aspx.cs">
+      <DependentUpon>ViewModerators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ModeratorFunctions\ViewModerators.aspx.designer.cs">
+      <DependentUpon>ViewModerators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ModeratorFunctions\ViewReports.aspx.cs">
+      <DependentUpon>ViewReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ModeratorFunctions\ViewReports.aspx.designer.cs">
+      <DependentUpon>ViewReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ModeratorFunctions\ViewUsers.aspx.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ModeratorFunctions\ViewUsers.aspx.designer.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\WebForm4.aspx.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
@@ -192,9 +251,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="css\" />
     <Folder Include="js\" />
     <Folder Include="Models\" />
+    <Folder Include="pages\UserFunctions\upload\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
